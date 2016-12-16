@@ -1,24 +1,8 @@
 <?php 
 function cs_front_scripts_enqueue() {
     wp_enqueue_script('jquery');
-    wp_enqueue_style('bootstrap.min_css', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
-    wp_enqueue_style('bootstrap-theme.min_css', get_template_directory_uri() . '/assets/css/bootstrap-theme.min.css');
-    wp_enqueue_style('wow_css', get_template_directory_uri() . '/assets/css/animate.css');
-    wp_enqueue_style('slick-theme_css', get_template_directory_uri() . '/assets/css/slick-theme.css');
-     wp_enqueue_style('hover_css', get_template_directory_uri() . '/assets/css/hover.css');
-     wp_enqueue_style('slick_css', get_template_directory_uri() . '/assets/css/slick.css');
-    wp_enqueue_style('normalize_css', get_template_directory_uri() . '/assets/css/normalize.css');
-    wp_enqueue_style('main_css', get_template_directory_uri() . '/assets/css/main.css');
-      wp_enqueue_style('responsive_css', get_template_directory_uri() . '/assets/css/responsive.css');
-    wp_enqueue_script('bootstrap.min_script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', '', '', true);
-     wp_enqueue_script('slick.min_script', get_template_directory_uri() . '/assets/js/slick.min.js', '', '', true);
-     wp_enqueue_script('fleche_script', get_template_directory_uri() . '/assets/js/fleche.js', '', '', true);
-     wp_enqueue_script('isotope_js', get_template_directory_uri() . '/assets/js/isotope.pkgd.min.js', '', '', true);
-     wp_enqueue_script('packery_js', get_template_directory_uri() . '/assets/js/packery-mode.pkgd.min.js', '', '', true);
-    wp_enqueue_script('parallax_js', get_template_directory_uri() . '/assets/js/parallax.min.js', '', '', true);
-     wp_enqueue_script('imagesloaded_js', get_template_directory_uri() . '/assets/js/imagesloaded.pkgd.min.js', '', '', true);
-    wp_enqueue_script('masonry_js', get_template_directory_uri() . '/assets/js/masonry.pkgd.min.js', '', '', true);
-    wp_enqueue_script('progressbar_js', get_template_directory_uri() . '/assets/js/progressbar.min.js', '', '', true);
+    wp_enqueue_style('screen', get_template_directory_uri() . '/ressources/css/screen.css');
+    wp_enqueue_script('korrigan', get_template_directory_uri() . '/ressources/js/korrigan.js', '', '', true);
 }
 add_action('wp_enqueue_scripts', 'cs_front_scripts_enqueue');
 
