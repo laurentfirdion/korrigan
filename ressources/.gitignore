@@ -1,0 +1,12 @@
+.sass-cache/
+*.css.map
+_compilation/*
+tags/*
+css/*
+js/*
+img/icons-*
+img/icons2x-*
+img/pictos-*
+img/pictos2x-*
+*.db
+screen.css
