@@ -14,7 +14,7 @@
 		wp_head();
     ?>
         
-    
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     </head>
 	<body <?php body_class();?> >
  <div class="container-fluid principal" id="top">       
