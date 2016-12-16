@@ -9,4 +9,5 @@ img/icons2x-*
 img/pictos-*
 img/pictos2x-*
 *.db
-screen.css
+css/screen.css
+*.css
