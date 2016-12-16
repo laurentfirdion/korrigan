@@ -10,8 +10,8 @@
 <div class="container-fluid milieu">
     <div class="container sousmilieu">
 <div class="row">
-<div class="col-xs-4 col-sm-4 col-md-4 push">
-<div class="pushmid">
+<div class="col-xs-4 col-sm-4 col-md-4 push pushleft">
+
     <h3><?php the_field('titre-home'); ?></h3>
     
         <a href="<?php // the_field('lien1'); ?>">
@@ -24,10 +24,10 @@
         <?php //the_field('texte_push1'); ?>
             <span><a href="<?php //the_field('lien1'); ?>">Découvrir</a></span>
         </div>
+   
     </div>
-    </div>
-<div class="col-xs-4 col-sm-4 col-md-4 push">
-      <div class="pushmid">
+<div class="col-xs-4 col-sm-4 col-md-4 push pushmiddle">
+      
      <h3><?php //the_field('titre_push2'); ?> Titre 2</h3>
     
         <a href="<?php //the_field('lien2'); ?>">
@@ -40,10 +40,10 @@
           <?php //the_field('texte_push2'); ?>
             <span><a href="<?php //the_field('lien2'); ?>">Découvrir</a></span>
         </div>
-    </div>
+   
     </div>   
- <div class="col-xs-4 col-sm-4 col-md-4 push">
-       <div class="pushmid">
+ <div class="col-xs-4 col-sm-4 col-md-4 push pushright">
+      
      <h3><?php //the_field('titre_push3'); ?>Titre 3</h3>
     
         <a href="<?php //the_field('lien3'); ?>">
@@ -56,7 +56,7 @@
          <?php //the_field('texte_push3'); ?>
             <span><a href="<?php //the_field('lien3'); ?>">Découvrir</a></span>
         </div>
-    </div>
+   
     </div>   
   
     
