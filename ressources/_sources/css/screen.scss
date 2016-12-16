@@ -1,0 +1,25 @@
+/*--------------------------------------
+    #SCREEN CSS
+--------------------------------------*/
+
+
+// EXTERNAL
+@import "external/animate";
+@import "external/bootstrap.min";
+@import "external/bootstrap-theme.min";
+@import "external/hover";
+
+// SPRITES
+@import "global/normalize";
+
+// LAYOUT
+@import "layout/ariane";
+@import "layout/article";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/home";
+@import "application/bouton";
+@import "application/form";
+
+// MOBILE
+@import "mobile/responsive";

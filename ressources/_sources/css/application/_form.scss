@@ -1,0 +1,39 @@
+.ninja-forms-form-wrap input, .ninja-forms-form-wrap textarea, .ninja-forms-required-items {
+  font-weight:normal!important; 
+      font-family: "Lato";
+  font-size: 14px;
+  text-transform: none;
+}
+.ninja-forms-required-items {
+ margin-bottom: 10px;
+    margin-top: 10px;
+}
+#ninja_forms_field_11_div_wrap input, #ninja_forms_field_16_div_wrap input{
+ width:100%;   
+    margin-left: 0;
+}
+.ninja-forms-form-wrap .submit-wrap input{
+    font: 400 14px / 20px 'OpenSans';
+    color: #ffffff;
+    background-color: #361172;
+    padding: 9px 21px 9px 21px;
+    width:20%!important;
+    border: 1px solid #361172;
+}
+
+.submit-wrap input:hover, .submit input:hover{
+     background-color: white;
+    color:#361172;
+    border: 1px solid #361172;
+}
+.ninja-forms-form-wrap input, .ninja-forms-form-wrap textarea{
+ width:100%!important; 
+      padding: 5px;
+}
+.ninja-forms-req-symbol {
+  color: black!important;
+}
+.ninja-forms-form-wrap label {
+  font-weight: normal!important;
+    color: black;
+}

@@ -1,0 +1,56 @@
+//BOUTON
+
+.lien a{
+    display: block;
+    color: #ffffff;
+    background-color: #0aade2;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 132px;
+    border:1px solid #0aade2;
+    margin: 0 auto;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.lien a:hover{
+    background-color: white;
+    color:#0aade2;
+}
+
+
+//fleche
+
+
+#fleche {
+  display: none;
+  position: fixed;
+ right: 5px;
+  top: 90%;
+  z-index: 99999;
+  width: 3%;
+}
+
+//read more
+
+.read-more {
+   color: #a54679; 
+    margin-top: 15px;
+      display: block;
+     margin-bottom: 15px;
+}
+
+
+
+#bs-example-navbar-collapse-1 {
+     height: 0px!important;
+  width: 0px;
+  margin: 0px;
+  text-indent: -100000000px;
+  border: 0px;
+} 
+#bs-example-navbar-collapse-1 li a{
+ border:0px;   
+}

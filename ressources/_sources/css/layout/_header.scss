@@ -1,0 +1,153 @@
+//HEADER
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.nav-haute{
+ float: right;
+    color: #ffffff;
+   margin-right: 5%;
+  width: 36%;
+}
+.haut {
+    background-color: #292929;
+      -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.header-haut {
+    background-color: #56585c;
+}
+.nav-haute li a{
+    color: white;
+    text-transform: uppercase;
+      font: 100 14px / 14px 'Lato';
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+      -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-default{
+ background-image:none !important;
+  background: none;
+    border: 0px white solid;
+    box-shadow: none!important;
+    overflow: hidden;
+}
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+.navbar-default .navbar-nav>li>a:hover, .nav-haute li a:hover {
+ color: #0aade2;
+}
+.navbar-brand {
+  float: none;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar-collapse{
+  width: 90%;
+  float: left;
+  margin-top: 18px;
+}
+.navbar-nav>li {
+      height: 57px;
+    position: inherit;
+}
+.navbar-nav>li>a {
+    font: 100 16px / 18px 'Lato';
+    text-transform: uppercase;
+      padding-top: 0px;
+  padding-bottom: 0px;
+    display: block;
+      -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.navbar-nav {
+  float: left;
+  margin: 0;
+   margin-top: 15px;
+      width: 100%;
+}
+.navbar-nav .current-menu-item a{
+    color:#0aade2 !important;
+}
+.navbar-nav .current-menu-item{
+    background: url(../../img/flechegrise.png) no-repeat;
+    background-position: bottom center;
+    background-size: 20%;
+}
+.navbar-nav>.current-menu-parent>a{
+    color: #a03c72!important; 
+}
+
+.nav-haute .current_page_item a {
+   color:white!important;
+    opacity: 0.7!important;
+}
+.nav-haute h9, .navbas-droite h9{
+    font: 400 14px / 14px 'OpenSans';
+    color: #9e8dcf;
+    background: url(../../img/phone.png) no-repeat;
+    background-position: left center;
+      padding-left: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+      float: left;
+  margin-right: 3%;
+}
+#menu-item-44{
+ margin-left: 2%;    
+}
+.nav-haute li, .navbas-droite li{
+    float: left;
+     margin-right: 5%;
+}
+.nav-haute li a:hover, .navbas-droite li a:hover{
+    opacity: 0.8;
+}
+
+.navbar {
+  position: static;
+    margin-bottom: 0px !important;
+      -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+.navbar .container{
+    max-width: 100%;
+      min-height: 90px;
+  max-height: 90px;
+}
+.navbar-header{
+width: 10%;
+  float: left!important;
+      margin-bottom: 0px!important;
+      max-height: 85px;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 0px;
+}
+
+.navbar-toggle {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.navbar-fixed-top {
+    position: relative;
+}

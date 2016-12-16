@@ -1,0 +1,891 @@
+@media screen and (max-width: 1531px) {
+
+
+}
+
+@media screen and (max-width: 1199px) {
+#aside .lien a {
+  width: 178px;
+}
+    .sideart {
+  width: 30%;
+  float: right;
+}
+#menu-item-47 {
+  //top: 196px;
+}
+    .nav-haute {
+  width: 35%;
+    }
+.navbar-nav>li>a {
+  font-size: 12px;
+}
+#menu-item-32 {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.sub-menu>li {
+  font-size: 13px;
+}    
+  .navbar-nav #menu-item-21:hover, .navbar-nav #menu-item-20:hover {
+  background-size: 25px;
+}  
+  #menu-item-54, #menu-item-55 {
+  font-size: 14px;
+}  
+  .pushactu .first{   
+    padding-bottom: 18px;  
+ }
+      .partenaire{
+        max-height: 228px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+   .textpartenaire h6 {
+  font: 300 24px 'OpenSans';
+   }
+    .notreequipe img {
+  margin-top: 10px;
+}
+  .pushactu .second{   
+    padding-bottom: 0px;  
+ }  
+    .ariane {
+  margin-top: 8px;
+}
+    
+ #navbar-side h4 {
+  font: 400 16.5px 'OpenSans';
+  background-position: 6px center;
+}   
+ #menu-item-50 {
+  top: 68px;
+}   
+  #menu-item-49 {
+  top: 110px;  
+  }
+    #menu-item-48 {
+  top: 152px;
+    }
+    #menu-item-47 {
+  top: 209px;
+    }
+    .imgactu img{
+      min-height: 346px;
+}
+    .pushactu .second h2 {
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+    .present h1 {
+  font: 700 22px / 34px 'OpenSans';
+    }
+    .present h2 {
+  font: 400 16px / 20px 'OpenSans';
+    }
+    .present p {
+  font: 400 14px /20px 'OpenSans';
+    }
+    .present .lien a {
+  width: 28.5%;
+  font-size: 14px;
+}
+   
+    .present .lien {
+  margin-top: 18px;
+}
+    .actutitre h4 {
+  font-size: 17px;
+  margin-right: 1%;
+}
+    .textemain .lien a {
+  width: 178px;
+}
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 1099px) {
+  .textemain .lien a {
+  width: 159px;
+}
+    .navbar-nav>li {
+  height: 40px;
+}
+.navbar-nav>li>a {
+  font-size: 11.5px;
+}
+.navbar-nav {
+  float: left;
+  margin: 0;
+  margin-top: 50px;
+  width: 100%;
+  margin: 0!important;
+  padding: 0!important;
+}
+.navbar-collapse{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0px;
+  margin-bottom: 0px;
+}
+.sub-menu{
+   margin-top: 90px;   
+}
+#menu-item-55, #menu-item-54, #menu-item-32 {
+  font-size: 13px;
+}
+.sub-menu>li {
+  border-right: 0px solid #747373;
+  border-bottom: 1px solid white;
+    margin-left: 11%;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+   width: 32.8%;
+  font-size: 11.5px;
+}
+#menu-item-52, #menu-item-53{    
+    clear: left;
+}
+    .navbar-nav #menu-item-21:hover, .navbar-nav #menu-item-20:hover {
+  background-size: 22px;
+}
+    
+.menuhaut li a {
+  font: 400 11px / 17px 'OpenSans';
+}    
+.nav-haute {
+  width: 60%;
+}    
+ .sticky {
+  width: 3%;
+  }
+ .pushactu .first{   
+    padding-bottom: 18px;  
+ }
+    .partenaire{
+       max-height: 228px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+    .textpartenaire h6 {
+  font: 300 24px 'OpenSans';
+    }
+    .notreequipe img {
+  margin-top: 10px;
+}
+  .notreequipe h7 {
+  font: 300 29px 'OpenSans';
+  left: 18%;
+}  
+    .pushactu .second{   
+    padding-bottom: 0px;  
+ }   
+   #menu-item-50 {
+  top: 66px;
+} 
+  #menu-item-49 {
+  top: 105px;
+}  
+  #menu-item-48 {
+  top: 144px;
+}  
+   #menu-item-47 {
+  top: 198px;
+} 
+ 
+}
+
+
+
+@media screen and (max-width: 991px) {
+body, html{
+ font-size: 13px;   
+}
+    .navbar-nav>li {
+  height: 50px;
+}
+.navbar-nav>li>a {
+    font-size: 8.8px;
+}
+.navbar-nav {
+  float: left;
+  margin: 0;
+  margin-top: 0px;
+  width: 100%;
+  margin: 0!important;
+  padding: 0!important;
+}
+.navbar-collapse{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0px;
+  margin-bottom: 0px;
+}
+.sub-menu{
+   margin-top: 90px;   
+}
+#menu-item-55, #menu-item-54, #menu-item-32 {
+  font-size: 13px;
+}
+.sub-menu>li {
+  border-right: 0px solid #747373;
+  border-bottom: 1px solid white;
+    margin-left: 11%;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+   width: 32.8%;
+  font-size: 11px;
+}
+#menu-item-52, #menu-item-53{    
+    clear: left;
+}
+    .navbar-nav #menu-item-21:hover, .navbar-nav #menu-item-20:hover {
+  background-size: 22px;
+}
+    
+.menuhaut li a {
+    font: 400 10px / 10px 'OpenSans';
+}    
+.nav-haute {
+  width: 36%;
+}    
+    .nav-haute h9, .navbas-droite h9 {
+  font: 400 11px / 14px 'OpenSans';
+    }
+    .nav-haute li img{
+        max-width: 80%;  
+    }
+  .mentions {
+  text-align: center;
+  }
+    .ldp {
+  text-align: center;
+}
+ .ldp h9 {
+  border-left: 0px;
+}   
+ #footer-sec{
+margin-bottom: 15px;
+padding-bottom: 25px;
+  }
+        #footer-sec .marge {
+  margin-right: 0%;
+}
+   .pushactu .last {
+  border-right: 1px solid white;
+} 
+    .pushactu .last h2{
+          margin-top: 10px;
+          margin-bottom: 6px;
+}
+    .picto {
+  margin-top: 8px;
+}
+   .pushactu .actu {
+        border-bottom: 5px solid white; 
+   }
+    .presentecole h1 {
+  font-size: 28px;
+    }
+    .actu h3 {
+  font-size: 26px;
+    }
+    .actu .lien2 a {
+  font-size: 13px;
+}
+    .actu .actutext h5 {
+  font: 400 18px / 25px 'OpenSans';
+  margin-top: 15px;
+}
+   .actu .imgactu {
+  width: 50%;
+  margin-right: 5%;
+} 
+   .textpartenaire h6 {
+  font: 300 25px 'OpenSans';
+   }
+    .notreequipe h7 {
+  font: 300 26px 'OpenSans';
+    }
+    
+    .textpartenaire {
+  margin-bottom: 25px;
+}
+  .notreequipe{   
+    margin-bottom: 25px;
+  padding-left: 0px!important;  
+ }  
+    .flechedroite {
+  right: 52%;
+}
+    .sliderpartenaire img {
+  width: 100%!important;
+  margin-top: -33px;
+}
+
+    .partenaire {
+  max-height: 208px;
+  overflow: hidden;
+}
+  .notreequipe h7 {
+  left: 22%;
+}  
+   .pushactu .first{   
+    padding-bottom: 0px;  
+ }  
+    .pushactu .second{   
+    padding-bottom: 0px;  
+ }   
+   .ariane {
+  margin-top: 7px;
+    font: 400 11px 'OpenSans';
+         padding-left: 3%;
+} 
+  #navbar-side h3 {
+  font: 400 11px 'OpenSans';
+  }
+  #navbar-side li {
+  font: 400 12px 'OpenSans';  
+  }
+  #navbar-side h4 {
+  font: 400 12px 'OpenSans';
+  background-position: 3px center;
+  background-size: 10%;
+  }
+  #navbar-side img {
+  max-height: 160px;
+}  
+   #navbar-side h6 {
+  font: 400 14px 'OpenSans';
+   }
+   #navbar-side p{
+    font-size: 12px;   
+   }
+    .item h3 {
+  font-size: 15px;
+    }
+   #navbar-side h7 {
+  font: 400 12px 'OpenSans';
+   }
+    #navbar-side h5 {
+  font: 400 12px 'OpenSans';
+}
+.principal section h2 {
+  font: 400 14px / 15px 'OpenSans';
+}
+   .stage h4, .metier h4, .enseignpro h3, .enseigngeneral h3 {
+  font: 400 15px 'OpenSans';
+   }
+  .panel-title {
+  font-size: 14px;
+}  
+  .menuhaut li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}  
+   .stagemod h5, .stageduree h5 {
+      font-size: 14px; 
+   }
+   .page-template-ecole  h4, .page-template-archive-offre h4 {
+  font-size: 14.5px;
+}
+ .sideart {
+  width: 40%;
+}   
+    #navbar-side h7 a {
+  font: 400 12px 'OpenSans';
+  padding-top: 22px;
+  padding-bottom: 22px;      
+    }
+   .postuler a {
+  font: 400 13.5px 'OpenSans';
+   }
+    .single-offre .mainoffre h5 {
+  font: 400 13.5px 'OpenSans';
+    }
+     .imgactu img{
+      min-height: 330px;
+}     
+      .pushactu .first h2 {
+  margin-top: 23px;
+  margin-bottom: 9px;
+}  
+   .pushactu .second h2 {
+  margin-top: 23px;
+  margin-bottom: 7px;
+}
+    .pushactu h2 {
+  margin-top: 19px;
+    }
+    .present h1 {
+  font: 700 18px / 22px 'OpenSans';
+          margin-bottom: 10px;
+}
+   .present h2 {
+  font: 400 15px / 18px 'OpenSans';
+} 
+  .present p {
+  font: 400 13px /17px 'OpenSans';
+}  
+  .present .lien a {
+  width: 35%;
+  font-size: 12px;
+}  
+  .powerpoint img {
+  min-height: 160px;
+}  
+  .contacthome img, .service img {
+  min-height: 119px;
+}  
+    .actutitre h3 {
+  font: 700 18px / 20px 'OpenSans';
+          margin-right: 3%;
+          margin-left: 2%;
+    }
+    .actutitre h4 {
+  font-size: 15px;
+    }
+    .actutitre .lien {
+  margin-right: 1%;
+}
+    .actutitre .lien a {
+  font-size: 13px;
+}
+    .navbas-droite{
+          width: 40%;
+    }
+    .navbas-gauche{
+        width: 60%; 
+    }
+    .navbas-gauche li a {
+  color: white;
+  font-size: 11px;
+}
+    .textemain h1 {
+  font: 700 22px / 38px 'OpenSans';
+}
+    .textemain h2 {
+  font: 700 18px / 22px 'OpenSans';
+}
+    #filters {
+  font-size: 12px;
+}
+    #aside .lien a {
+  width: 160px;
+}
+  .artext h3{
+   font-size: 20px;   
+  }
+   .sidebar h3 {
+    font-size: 18px;       
+   }
+    .sidebar li a {
+  font-size: 16px;
+}
+    .artext h1 {
+     font-size: 20px;   
+    }
+    .tags {
+  font-size: 12px;
+}
+    .tag h1 {
+  font-size: 22px;
+}
+    .ninja-forms-form-wrap .submit-wrap input {
+  width: 100%!important;
+}
+    .tarifmain h2 {
+  font-size: 20px;
+}
+   .tarifmain h3 {
+  font-size: 16px; 
+   }
+    .tarifmain p {
+  font-size: 14px;
+    }
+
+    .slick-next {
+  margin-left: -6px;
+    }
+    .navbar-default{
+    overflow:auto;
+}
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .col-xs-12 {
+    padding-right: 0px;
+    padding-left: 0px; 
+    }
+    #navbar-side{
+     margin-top: 30px;   
+    }
+    #navbar-side h3, #navbar-side h4 {
+      margin-top: 15px;    
+    }
+    #bs-example-navbar-collapse-1 {
+        height:auto!important;
+   width: 100%;
+  margin-top: 0px;
+  text-indent: 0px;
+  border-top: 0px solid grey;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}   
+  
+   
+    .navbar-nav #menu-item-21:hover, .navbar-nav #menu-item-20:hover {
+  background:none;
+} 
+    .navbar-nav>li>a {
+  font-size: 12px;
+        border:0px;
+         color: white!important;
+}
+    #menu-item-32 {
+display: none;
+}
+    .sub-menu>li {
+          width: 100%;
+        float:none;
+    }
+ .navbar-nav>li {
+  width: 100%;
+  height: auto;
+      float:none;
+}   
+#menu-item-55, #menu-item-54, #menu-item-32 {
+  font-size: 12px;
+}
+ #menu-item-55{
+      position: relative;
+  top: 0;
+  right: 0;
+}
+#menu-item-50{
+  position: relative;
+  top: 0;
+  right: 0;
+}
+#menu-item-49{
+  position: relative;
+  top: 0;
+  right: 0;
+}
+#menu-item-48{
+  position: relative;
+  top: 0;
+  right: 0;
+}
+#menu-item-47{
+  position: relative;
+  top: 0;
+  right: 0;
+}   
+.actu {
+ border-bottom: 5px solid white;;   
+}
+.pushactu .last {
+ border-right:5px solid white;   
+}
+    .picto {
+  margin-top: 8px;
+}
+.last .picto{
+   margin-top: 18px;   
+}
+    
+  .notreequipe{   
+    margin-bottom: 25px;
+  padding-left: 0px!important;  
+ }
+  .sticky {
+  width: 4%;
+  }
+    #footer-sec .marge {
+  margin-right: 0%;
+}
+  #footer-sec{
+margin-bottom: 15px;
+  }
+    .presentecole {
+  margin-bottom: 25px;
+}
+  .mentions {
+  text-align: center;
+  }
+    .ldp {
+  text-align: center;
+}
+ .ldp h9 {
+  border-left: 0px;
+}   
+    .nav-haute {
+  width: 100%;
+}
+   .presentecole h1 {
+  font-size: 27px;
+   }
+   .textpartenaire h6 {
+  font: 300 25px 'OpenSans';
+   }
+    .actu{
+       padding-left: 0px;   
+    }
+    .pushactu .last h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+    .picto img {
+       margin-left: 5%;   
+    }
+     .pushactu .first{   
+    padding-bottom: 0px;  
+ }
+     .pushactu .second{   
+    padding-bottom: 0px;  
+ }  
+    #navbar-side img {
+  max-height: 255px;
+    }
+   #navbar-side h4 {
+  background-position: 25px center;
+  background-size: 4%;
+} 
+ .ariane {
+  margin-top: 6px;
+  font: 400 9px 'OpenSans';
+}   
+  .menuhaut li a {
+  font: 400 10px / 14px 'OpenSans';
+}  
+  #menu-item-101 {
+  background-position: left center;
+  background-size: 13%;
+}  
+     .pushactu .actu {
+     border:0px;
+    margin-bottom: 5px;    
+    }
+    
+       .pushactu .last h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 
+   .pushactu .last .picto img {
+    margin-top: -10px;
+      margin-left: 9%;
+   }
+     .actu {
+  border: 0px;
+}
+   .partenaire {
+  max-height: 248px;
+} 
+ .notreequipe {
+  margin-left: 25%;
+}
+   .flechedroite {
+  right: 51%;
+} 
+  .navbar-collapse {  
+    box-shadow: inset 0 0px 0 rgba(255,255,255,.1);  
+  }
+    .nav-haute li {
+  float: left;
+  margin-right: 1%;
+}
+  
+    .present .lien a {
+  width: 145px;
+    }
+    .actutitre h3 {
+  font: 700 16px / 20px 'OpenSans';
+    }
+    .actutitre .lien a {
+  font-size: 12px;
+     padding-bottom: 10px;
+  padding-top: 10px;     
+}
+   .actutitre .lien {
+  margin-top: 16px;
+   }
+    .actutext img {
+max-width: 100% !important;
+  width: auto !important;
+  min-height: initial;
+  max-height: none;
+}
+ .actutext h5 {   
+      display: block !important;
+       background-color: rgba(67,34,89, 0.2);
+ }
+    .navbar-header {
+  width: 35%;
+  margin: 0 auto !important;
+    }
+    
+        #filters {
+  font-size: 11px;
+}
+    .linkprev, .linknext {
+  margin-top: 30px;
+}
+    .side {
+  background-color: white;
+  width: 100%;
+  margin-left: 0%;
+  margin-top: 30px;
+  padding-bottom: 25px;
+}
+}
+    
+@media screen and (max-width: 470px) {    
+.nav-haute{
+ width: 100%;   
+}
+    .pushactu .second{   
+    padding-bottom: 0px;  
+ }   
+      .pushactu .first{   
+    padding-bottom: 0px;  
+ }
+   .header-haut {
+  display: none!important;
+} 
+   #bs-example-navbar-collapse-1 {
+    height:auto!important;
+   width: 100%;
+  margin-top: 0px;
+  text-indent: 0px;
+  border-top: 0px solid grey;
+  padding-top: 0px;
+}   
+    .ninja-forms-form-wrap .submit-wrap input {
+ width: 100%!important;
+}
+    .sticky {
+  display: none;
+}
+ .retour {
+  width: 20%;
+}   
+ .ariane {
+  width: 80%;
+  margin-top: 5px;
+  font: 400 11px 'OpenSans';
+  padding-bottom: 5px;
+    }
+   .page-template-ecole h4, .page-template-archive-offre h4 {
+  font-size: 12.5px;
+} 
+    .pushactu .actu {
+     border:0px;
+    margin-bottom: 5px;    
+    }
+   #rev_slider_1_1_wrapper{
+       display: none;
+   }
+   .pushactu .last h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} 
+   .pushactu .last .picto img {
+    margin-top: -10px;
+      margin-left: 13%;
+   }
+   .imgactu img, .artimage img {
+  max-height: 160px!important;
+       max-width: 100%!important;
+} 
+ .actu {
+  border: 0px;
+}   
+  .textpartenaire {
+  width: 100%;
+  }
+  .partenaire {
+  max-height: none;
+  }
+    .flechedroite {
+     display: none;   
+    }
+   .sliderpartenaire {
+  width: 100%;
+   }
+    .notreequipe {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  width: 100%!important;
+        margin-left: 0;
+    }
+    #footer-sec h8 {
+  font: 700 13px / 14px 'OpenSans';
+    }
+    #footer-sec p {
+  font: 400 13px / 17px 'OpenSans';
+    }
+   .artimage {
+  width: 100%;
+  margin-right: 0;
+} 
+ .single-post .principal section img, .tag .principal section img{
+  width: auto;
+} 
+    .artext {
+  width: 100%;
+  margin-top: 15px;
+}
+    .mainoffre h3 {
+  padding-top: 8px;
+    }
+    .postuler {
+  width: 50%;
+    }
+    .actutitre h4 {
+  font-size: 15px;
+  display: none;
+}
+   .actutitre .lien {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+    .actutitre h3 {
+  margin-top: 14px;
+    }
+    .navbas-gauche, .navbas-droite{
+     width: 100%;
+        float: left;
+    }
+     .navbas-gauche{
+      margin-top: 15px;   
+     }
+    .navbas-gauche li {
+  float: left;
+        margin-right: 2%;
+          padding-right: 10px;
+    }
+    #menu-item-58{
+     border:0px;   
+    }
+    .navbar-header {
+  width: 50%;
+    }
+    #filters button {
+  margin-bottom: 10px;
+}
+}

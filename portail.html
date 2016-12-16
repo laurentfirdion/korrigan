@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+
+label {
+	width:500px;
+	text-align:right;
+	display:block;
+	margin-top:1.5em;
+}
+
+input {
+	width: 250px;
+	display:inline-block;
+	text-align:center;
+}
+
+form {
+	width: 800px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:20px;
+	border:
+}
+</style>
+</head>
+<body>
+	<h1>Page de démonstration de formulaire de connexion déporté</h1>
+	<p>Resamania fourni une méthode web permettant de déporter le formulaire d'authentification sur une page web tierce.</p>
+	<p> Cette fonctionnalité est accéssible à travers l'URL <b>http://<i>xxx</i>.resamania.fr/auth/PlainWithRedirect</b></p>
+	
+	<!-- Changer la valeur xxx.resamania.fr par l'adresse Resamania de votre club -->
+	<form action="http://aquawellness.resamania.fr/auth/PlainWithRedirect" method="post">
+		<label>
+			Identifiant :
+			<!-- user -->				
+			<input type="text" name="user" placeholder="Identifiant"></input>
+		</label>
+		
+		<label>
+			Mot de passe :
+			<!-- pass -->			
+			<input type="password" name="pass" placeholder="Mot de passe"></input>
+		</label>
+
+		<label>
+			Mémorisation :
+			<!-- userTracking -->			
+			<input type="checkbox" name="userTracking"></input>		
+		</label>
+		
+		<label>
+			URL de redirection en cas d'échec : 
+			<!-- failedUrl -->						
+			<input type="text" name="failedUrl" placeholder="Url de retour en cas d'échec de connexion"></input>		
+		</label>
+		
+		<label>
+			<input type="submit" value="Se connecter">
+		</label>			
+	</form>
+	
+</body>
+
+</html>

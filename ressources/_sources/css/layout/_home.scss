@@ -1,0 +1,95 @@
+.milieu {
+    background: url(../../img/backgroundblue.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+    min-height: 315px;
+    max-height: 315px;
+    z-index: -1;
+}
+
+.push {
+     margin-top: -25px;
+  z-index: 9999;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right: 5px solid transparent;
+}
+.push h3{
+  font: 700 21px 'Lato'; 
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: rgba(0,0,0,1);
+      margin-top: 0px;
+}
+.sousmilieu {
+      overflow: visible;
+}
+.pushimg {
+    width:57%;
+    margin: 0 auto;
+}
+.pushimg img{
+ width: 100%; 
+}
+.pushtext {
+   width: 100%;
+  margin: 0 auto;
+  color: white;
+  font: 700 14px / 18px 'Lato';
+  padding-bottom: 25px;
+ 
+}
+.pushtext p{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+.pushtext span{
+ display: none;
+      margin-top: 24px;
+}
+.pushtext span a{
+    display: block;
+       padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    background-color: #04475c;
+      -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+     margin: 0 auto;
+      width: 101px;
+    border:1px solid #04475c;
+}
+.pushtext span a:hover{
+    background-color: white;
+    color: #04475c;
+    border:1px solid #04475c;
+}
+.traitblanc {
+    border: 1px solid white;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.pushmid {
+     -moz-box-shadow: 2px 2px 15px 0px #000000;
+-webkit-box-shadow: 2px 2px 15px 0px #000000;
+-o-box-shadow: 2px 2px 15px 0px #000000;
+box-shadow: 2px 2px 15px 0px #000000;
+background-color: #0aade2;
+       -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.pushmid:hover {
+    background-color: #0aa0d1;
+}
+.push a{
+    display: block;
+}
