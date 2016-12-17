@@ -4,18 +4,18 @@
  */
  ?>
 
-    <footer id="footer-sec">
+    <footer class="footer">
         <div class="container">
 
             <div class="row">
 
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                    <h6>INSCRIPTION À LA NEWSLETTER</h6>
-                    <p>Inscrivez-vous à notre newsletter et recevez les dernières nouvelles.</p>
+                    <h6>Mentions</h6>
+                    <p> ©Association les Korrigans 2017</p>
 
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                    <h6>INFORMATION</h6>
+                    <h6>Plan du site</h6>
                     <?php
 
 $defaults = array(
@@ -47,15 +47,15 @@ wp_nav_menu( $defaults );
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <h6>CONTACT</h6>
 
-                    <h5 class="heure">Heures de garde</h5>
+                    <h5 class="heure"><span class="picto picto-clock"></span>Heures de garde</h5>
                     <p>Du lundi au vendredi de 8h00 à 18h00</p>
-                    <h5 class="adresse">Adresse</h5>
+                    <h5 class="adresse"><span class="picto picto-adress"></span>Adresse</h5>
                     <p>4 bis rue Les Temps Modernes<br />
                     35250 Chevaigné
                     </p>
-                    <h5 class="telephone">Téléphone</h5>
+                    <h5 class="telephone"><span class="picto picto-phone"></span>Téléphone</h5>
                     <p>02 99 55 15 16</p>
-                    <h5 class="mail">Mail</h5>
+                    <h5 class="mail"><span class="picto picto-email"></span>Mail</h5>
                     <p>asso.korrigans@gmail.com</p>
                 </div>
             </div>

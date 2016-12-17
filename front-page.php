@@ -12,48 +12,48 @@
 <div class="row">
 <div class="col-xs-4 col-sm-4 col-md-4 push pushleft">
 
-    <h3><?php the_field('titre-home'); ?></h3>
+    <h2><?php the_field('titre_push1'); ?></h2>
     
-        <a href="<?php // the_field('lien1'); ?>">
+        <a href="<?php // the_field('lien1'); ?>"></a>
         <div class="pushimg">
-    <img src="<?php // the_field('picto_push1'); ?>"/>
-            </div>
-            </a>
+            <span class="picto picto-parents"></span>  
+        </div>
+           
         <div class="pushtext">
         <hr class="traitblanc"/>
-        <?php //the_field('texte_push1'); ?>
+        <?php the_field('text_push1'); ?>
             <span><a href="<?php //the_field('lien1'); ?>">Découvrir</a></span>
         </div>
    
     </div>
 <div class="col-xs-4 col-sm-4 col-md-4 push pushmiddle">
       
-     <h3><?php //the_field('titre_push2'); ?> Titre 2</h3>
+     <h2><?php the_field('titre_push2'); ?></h2>
     
-        <a href="<?php //the_field('lien2'); ?>">
+        <a href="<?php //the_field('lien2'); ?>">  </a>
         <div class="pushimg">
-    <img src="<?php //the_field('picto_push2'); ?>"/>
-            </div>
-            </a>
+                <span class="picto picto-ours"></span>
+        </div>
+          
         <div class="pushtext">
         <hr class="traitblanc"/>
-          <?php //the_field('texte_push2'); ?>
+          <?php the_field('text_push2'); ?>
             <span><a href="<?php //the_field('lien2'); ?>">Découvrir</a></span>
         </div>
    
     </div>   
  <div class="col-xs-4 col-sm-4 col-md-4 push pushright">
       
-     <h3><?php //the_field('titre_push3'); ?>Titre 3</h3>
+     <h2><?php the_field('titre_push3'); ?></h2>
     
-        <a href="<?php //the_field('lien3'); ?>">
-        <div class="pushimg">
-    <img src="<?php //the_field('picto_push3'); ?>"/>
-            </div>
-            </a>
+        <a href="<?php //the_field('lien3'); ?>"> </a>
+         <div class="pushimg">
+             <span class="picto picto-castle"></span>
+        </div>
+           
         <div class="pushtext">
         <hr class="traitblanc"/>
-         <?php //the_field('texte_push3'); ?>
+         <?php the_field('text_push3'); ?>
             <span><a href="<?php //the_field('lien3'); ?>">Découvrir</a></span>
         </div>
    
@@ -67,38 +67,60 @@
     </div>
 
 </div>
-
+    <br class="stopfloat"/>
 </div><!-- fin container fluid milieu -->
 
 
 <div class="container bas">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 present">
-    <h1><?php //the_field('titre_principal'); ?> Titre principal</h1>
+    <h3><?php the_field('titre_mission'); ?></h3>
    
-            <?php //the_field('texte_presention'); ?>
+            <p><?php the_field('texte_mission'); ?></p>
             
-            <div class="lien"><a href="<?php //bloginfo('url'); ?>/aqua-wellness/">EN SAVOIR +</a></div>
+          
         </div>
             </div>
     
     
-                </div>
-
-<div class="container abohome">
-<a href="<?php //bloginfo('url'); ?>/abonnements/"><h3>DÉCOUVRIR NOS ABONNEMENTS</h3></a>
-
 </div>
-<div class="container-fluid salle">
+
+
+<div class="container-fluid actu">
         <div class="container basbas">
-    <div class="row slidertemoin">
+    <div class="row">
+        
+       <div class="col-xs-12 col-sm-8 col-md-8 actumain">
+            <h4>Nos actualités</h4>
+            
+                 <?php  $my_query = new WP_Query( 'posts_per_page=4' );
+            while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+                 
+               <div class="actu-item">
+                 <div class="actuimg"> <?php the_post_thumbnail( 'full' ); ?>
+                                     
+                </div>
+                 <div class="actutext"><span class="date"><?php the_time('j F Y'); ?></span>
+                     <h5 class="titreactu"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                   <p> <?php the_excerpt(); ?></p>
+                
+                   </div>
+                 
+                 </div>
+             
+                <?php endwhile; wp_reset_query();?>
+                
+        </div>
+        
+        
+        
         
         
          <?php /* $query = new WP_Query( 'post_type=temoignage' ); 
       while ( $query->have_posts() ) : $query->the_post(); */?>
         
         
-         <div class="col-xs-4 col-sm-4 col-md-4 temoin">
+       <!--  <div class="col-xs-4 col-sm-4 col-md-4 temoin">
             <img src="<?php //the_field('photo'); ?>" /> <h2><?php //the_field('nom'); ?></h2>
                 <span><?php //the_field('date'); ?></span>
              <br class="stopfloat"/>
@@ -108,55 +130,18 @@
          <?php /* endwhile; wp_reset_postdata();
      //fin loop $ma_boucle */
             ?>
+        -->
+    
+    </div>
+
+   </div>
+</div>
+<div class="container-fluid map">
+                    <h6>Adresse</h6>
+
         
-    
-            </div>
-            <div class="row">
-             <div class="col-xs-12 col-sm-12 col-md-6 activitemain">
-            <h4><?php //the_field('titre_activite'); ?></h4>
-          
-            <?php //the_field('video_activite'); ?>    
-            <?php //the_field('texte_video'); ?>  
-                 
-            </div>
-             <div class="col-xs-12 col-sm-12 col-md-6 actumain">
-            <h4>Nos actualités</h4>
-            
-                 <?php /* $my_query = new WP_Query( 'posts_per_page=4' ); 
-
-php while ( $my_query->have_posts() ) : $my_query->the_post(); */ ?>
-                 
-               <div class="activite">
-                 <div class="activiteimg"> <?php //the_post_thumbnail( 'full' ); ?><div class="transparent"><h6><a class="hvr-fade" href="<?php //the_permalink(); ?>" title="">Voir</a></h6></div></div>
-                 <div class="activitetext"><span class="date"><?php //the_time('j F Y'); ?></span><h5 class="titreactu"><?php //the_title(); ?></h5></div>
-                 
-                 </div>
-             
-                 <?php //endwhile; wp_reset_query();?>
-                
-            </div>
-            
-            </div>
-                </div>
-                    </div>
-            <div class="container">
-
-                <div class="col-xs-12 col-sm-12 col-md-12 galerie">
-                    <h6>Galerie</h6>
-<div class="grid">
-    <div class="grid-sizer"></div>
-    
-     <?php /* $query = new WP_Query( 'post_type=galerie' ); 
-      while ( $query->have_posts() ) : $query->the_post(); */ ?>
-    
-  <div class="grid-item"><img src="<?php //the_field('photo'); ?>"/><div class="transparent2"><h6><?php //the_field('texte'); ?></h6></div></div>
- 
- <?php /* endwhile;
-    wp_reset_postdata();
-    // fin loop $ma_boucle */
-            ?>
-                    </div>
-            </div>
+        
+<?php echo do_shortcode("[huge_it_maps id='1']"); ?>
 
 </div>
 
