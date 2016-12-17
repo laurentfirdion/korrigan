@@ -1,110 +1,74 @@
 //FOOTER
 
-.footerback {
-    background-color: #56585c;
-}
-
-#footer-sec h8{
-    text-transform: uppercase;
-    color: white;
-    font: 700 14px / 20px 'OpenSans';
-    margin-top: 39px;
-    margin-bottom: 21px;
-    display: block;
-}
-#footer-sec p{
-    color: white;
-    font: 400 16px / 16px 'Lato';
-      margin-bottom: 0px;
-}
-#footer-sec .container{
-  overflow: hidden;
-}
 
 
-.marge {
-    margin-right: 5%;
-}
-
-.wrapperreseau {
-    width:100%;
-    overflow: hidden;
-}
-
-.logobas {
-    margin-top:76px;
-    margin-bottom: 59px;
-}
-
-.footerend {
-    background-color:#424448;
-}
-
-.adresse {
-     padding-left: 35px;
-  padding-top: 2px;
-  padding-bottom: 10px;
-  background: url(../../img/adresse.png) no-repeat;
-  background-size: 7%;
-    margin-top: 15px;
-}
-.adresse a{
- color: white;   
-}
-#footer-sec {
+.footer {
     margin-bottom: 15px;
-padding-bottom: 25px;
-    background-color:#292929;
+    padding-bottom: 25px;
+    background-color:#222;
     color: white;
-      padding-top: 15px;
-}
-#footer-sec a{
- color: white;
-}
-#footer-sec ul li a{
-  font-size: 18px;
-  font-family: 'Lato';
-  display: block;
-  padding: 2px;
-  border: 1px solid #0aade2;
-  text-align: center; 
+    padding-top: 15px;
+    
+    .container{
+        overflow: hidden;
+    }
+
+    
+    h6 {
+        color: #e75d5d;
+        font-family: 'Pacifico', cursive;
+        font-size: 20px;
+        margin-bottom: 20px;     
+    }
+    
+    p {
+        color: #ddd;
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    ul li a{ 
+    font-size: 16px;
+    font-family: 'Pacifico', cursive;
+    display: block;
+    padding: 8px;
+    border: 1px solid #e75d5d;
+    text-align: center; 
     color: white;
      -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s; 
-}
-#footer-sec ul li a:hover{
- border: 1px solid white;  
-}
-#footer-sec h6{
-    font: 700 20px 'Lato';
-      margin-bottom: 20px;
-}
-#footer-sec h5{
-    font: 700 18px 'Lato';
-}
-.heure {
-    padding-left: 35px;
-  padding-top: 2px;
-  padding-bottom: 10px;
-  background: url(../../img/horaire.png) no-repeat;
-  background-size: 7%;
-}
 
-.telephone {
-      padding-left: 35px;
-  padding-top: 2px;
-  padding-bottom: 10px;
-  background: url(../../img/pictophone.png) no-repeat;
-  background-size: 7%;
-        margin-top: 15px;
-}
+        &:hover{
+            border: 1px solid white;  
+        }
+    
+    }
 
-.mail {
-      padding-left: 35px;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  background: url(../../img/mail.png) no-repeat;
-  background-size: 7%; 
-    margin-top: 15px;
+
+
+    .adresse {
+        padding-top: 2px;
+        padding-bottom: 0px;
+    }
+    .heure {
+        padding-top: 2px;
+        padding-bottom: 10px;
+    }
+    .telephone {
+        padding-top: 2px;
+        padding-bottom: 10px;
+    }
+    .mail {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .picto {
+        margin-right: 9px;
+        margin-bottom: 3px;
+    }
+    .picto-adress {
+        margin-bottom: 8px;
+    }
+    
 }

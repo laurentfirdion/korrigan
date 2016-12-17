@@ -36,10 +36,16 @@
 //read more
 
 .read-more {
-   color: #a54679; 
+   color: #222; 
+    cursor: pointer;
     margin-top: 15px;
-      display: block;
+    display: block;
      margin-bottom: 15px;
+    
+    &:hover {
+        font-weight: bold;
+    }
+
 }
 
 
@@ -53,4 +59,8 @@
 } 
 #bs-example-navbar-collapse-1 li a{
  border:0px;   
+}
+
+a {
+    cursor: pointer;
 }
