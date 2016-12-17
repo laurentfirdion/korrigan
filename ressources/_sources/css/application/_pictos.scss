@@ -1,0 +1,47 @@
+.picto {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.picto-ours {
+    background: url(../img/sprites/svg/bear.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+}
+.picto-castle {
+    background: url(../img/sprites/svg/castle.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+}
+.picto-parents {
+    background: url(../img/sprites/svg/parents.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 90px;
+    height: 90px;
+}
+.picto-adress {
+    background: url(../img/sprites/svg/adress.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 28px;
+    height: 26px;
+}
+.picto-clock {
+    background: url(../img/sprites/svg/clock.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 25px;
+}
+.picto-email {
+    background: url(../img/sprites/svg/email.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+.picto-phone {
+    background: url(../img/sprites/svg/phone.svg) no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
