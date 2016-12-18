@@ -11,7 +11,7 @@
 
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <h6>Mentions</h6>
-                    <p> ©Association les Korrigans 2017</p>
+                    <p> © Association les Korrigans 2017</p>
 
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
@@ -65,7 +65,7 @@ wp_nav_menu( $defaults );
 
 
 
-    <div id="fleche"><a href="#top"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fleche.png" alt="fleche"/></a></div>
+<div id="fleche"><a href="#top"><span class='picto picto-arrow'></span></a></div>
 
     </div>
     <!-- Wrapper End -->
