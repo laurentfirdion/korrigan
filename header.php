@@ -6,6 +6,7 @@
 <html <?php language_attributes(); ?>>
     <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -63,7 +64,7 @@ wp_nav_menu( $defaults );
       </button>
     <div class="navbar-header">
     
-      <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="logo Korrigans"/></a>
+      <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/ressources/img/html/logo.png" alt="logo Korrigans"/></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

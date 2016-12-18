@@ -1,137 +1,36 @@
+@media screen and (max-width: 1350px) {
 
-@media screen and (max-width: 1199px) {
-#aside .lien a {
-  width: 178px;
-}
-    .sideart {
-  width: 30%;
-  float: right;
-}
-
-    .nav-haute {
-  width: 35%;
+    .sousmilieu {
+        width: 90%;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
-.navbar-nav>li>a {
-  font-size: 12px;
 }
-#menu-item-32 {
-  padding-bottom: 10px;
-  font-size: 14px;
-}
-.sub-menu>li {
-  font-size: 13px;
-}    
-  .navbar-nav #menu-item-21:hover, .navbar-nav #menu-item-20:hover {
-  background-size: 25px;
-}  
-  #menu-item-54, #menu-item-55 {
-  font-size: 14px;
-}  
-  .pushactu .first{   
-    padding-bottom: 18px;  
- }
-.pushactu .second{   
-    padding-bottom: 0px;  
- }  
-.ariane {
-  margin-top: 8px;
-}
-    
- #navbar-side h4 {
-  font: 400 16.5px 'OpenSans';
-  background-position: 6px center;
-}   
-
-.imgactu img{
-      min-height: 346px;
-}
-.pushactu .second h2 {
-  margin-top: 15px;
-  margin-bottom: 7px;
-}
-
-.actutitre h4 {
-  font-size: 17px;
-  margin-right: 1%;
-}
+@media screen and (max-width: 1199px) {
  
+    .navbar-nav>li>a {
+        font-size: 14px;
+    } 
     
-    
-    
 }
-
-
-
-@media screen and (max-width: 1099px) {
-
-.navbar-nav>li {
-  height: 40px;
-}
-.navbar-nav>li>a {
-  font-size: 11.5px;
-}
-.navbar-nav {
-  float: left;
-  margin: 0;
-  margin-top: 50px;
-  width: 100%;
-  margin: 0!important;
-  padding: 0!important;
-}
-.navbar-collapse{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-top: 0px;
-  margin-bottom: 0px;
-}
-.sub-menu{
-   margin-top: 90px;   
-}
-
-.sub-menu>li {
-  border-right: 0px solid #747373;
-  border-bottom: 1px solid white;
-    margin-left: 11%;
-  margin-bottom: 15px;
-  padding-bottom: 8px;
-   width: 32.8%;
-  font-size: 11.5px;
-}
-
-.navbar-nav #menu-item-21:hover, .navbar-nav #menu-item-20:hover {
-  background-size: 22px;
-}
-    
-.menuhaut li a {
-  font: 400 11px / 17px 'OpenSans';
-}    
-.nav-haute {
-  width: 60%;
-}    
- 
- .pushactu .first{   
-    padding-bottom: 18px;  
- }
-   
-.pushactu .second{   
-    padding-bottom: 0px;  
- }   
-
- 
-}
-
-
 
 @media screen and (max-width: 991px) {
-body, html{
- font-size: 13px;   
+
+
+.container {
+    
+    > .navbar-header {
+        float: none !important;
+        margin: auto;
+        margin-top: 10px;
+    }
+    > .navbar-collapse {
+        float: none;
+        margin-top: 5px;
+    }
 }
-    .navbar-nav>li {
-  height: 50px;
-}
-.navbar-nav>li>a {
-    font-size: 8.8px;
-}
+/*
 .navbar-nav {
   float: left;
   margin: 0;
@@ -140,448 +39,118 @@ body, html{
   margin: 0!important;
   padding: 0!important;
 }
-.navbar-collapse{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-top: 0px;
-  margin-bottom: 0px;
+*/
+.navbar .container {
+    min-height: 1px;
+    max-height: 158px;
+    overflow: hidden;
 }
-.sub-menu{
-   margin-top: 90px;   
+  
+.navbar-nav {
+    float: none;
+    width: 625px;
+    margin: auto;
+    margin-top: 15px;
 }
-#menu-item-55, #menu-item-54, #menu-item-32 {
-  font-size: 13px;
-}
-.sub-menu>li {
-  border-right: 0px solid #747373;
-  border-bottom: 1px solid white;
-    margin-left: 11%;
-  margin-bottom: 15px;
-  padding-bottom: 8px;
-   width: 32.8%;
-  font-size: 11px;
-}
-
-.navbar-nav #menu-item-21:hover, .navbar-nav #menu-item-20:hover {
-  background-size: 22px;
-}
-    
-.menuhaut li a {
-    font: 400 10px / 10px 'OpenSans';
-}    
-.nav-haute {
-  width: 36%;
-}    
-    .nav-haute h9, .navbas-droite h9 {
-  font: 400 11px / 14px 'OpenSans';
-    }
-    .nav-haute li img{
-        max-width: 80%;  
-    }
-
- 
-
- #footer-sec{
-margin-bottom: 15px;
-padding-bottom: 25px;
-  }
-        #footer-sec .marge {
-  margin-right: 0%;
-}
-   .pushactu .last {
-  border-right: 1px solid white;
-} 
-    .pushactu .last h2{
-          margin-top: 10px;
-          margin-bottom: 6px;
-}
- 
-   .pushactu .actu {
-        border-bottom: 5px solid white; 
-   }
-
-    .actu h3 {
-  font-size: 26px;
-    }
-    .actu .lien2 a {
-  font-size: 13px;
-}
-    .actu .actutext h5 {
-  font: 400 18px / 25px 'OpenSans';
-  margin-top: 15px;
-}
-   .actu .imgactu {
-  width: 50%;
-  margin-right: 5%;
-} 
-
-.pushactu .first{   
-    padding-bottom: 0px;  
- }  
-.pushactu .second{   
-    padding-bottom: 0px;  
- }   
-.ariane {
-  margin-top: 7px;
-    font: 400 11px 'OpenSans';
-    padding-left: 3%;
-} 
-  #navbar-side h3 {
-  font: 400 11px 'OpenSans';
-  }
-  #navbar-side li {
-  font: 400 12px 'OpenSans';  
-  }
-  #navbar-side h4 {
-  font: 400 12px 'OpenSans';
-  background-position: 3px center;
-  background-size: 10%;
-  }
-  #navbar-side img {
-  max-height: 160px;
-}  
-   #navbar-side h6 {
-  font: 400 14px 'OpenSans';
-   }
-   #navbar-side p{
-    font-size: 12px;   
-   }
-   #navbar-side h7 {
-  font: 400 12px 'OpenSans';
-   }
-    #navbar-side h5 {
-  font: 400 12px 'OpenSans';
-}
-
-.menuhaut li {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}  
- 
- .sideart {
-  width: 40%;
-}   
-    #navbar-side h7 a {
-  font: 400 12px 'OpenSans';
-  padding-top: 22px;
-  padding-bottom: 22px;      
-    }
- 
-.imgactu img{
-      min-height: 330px;
-}     
-      .pushactu .first h2 {
-  margin-top: 23px;
-  margin-bottom: 9px;
-}  
-   .pushactu .second h2 {
-  margin-top: 23px;
-  margin-bottom: 7px;
-}
-    .pushactu h2 {
-  margin-top: 19px;
-    }
-    .actutitre h3 {
-  font: 700 18px / 20px 'OpenSans';
-          margin-right: 3%;
-          margin-left: 2%;
-    }
-    .actutitre h4 {
-  font-size: 15px;
-    }
-    .actutitre .lien {
-  margin-right: 1%;
-}
-    .actutitre .lien a {
-  font-size: 13px;
-}
-    .navbas-droite{
-          width: 40%;
-    }
-    .navbas-gauche{
-        width: 60%; 
-    }
-    .navbas-gauche li a {
-  color: white;
-  font-size: 11px;
-}
-
-
- #aside .lien a {
-  width: 160px;
-}
-  .artext h3{
-   font-size: 20px;   
-  }
-   .sidebar h3 {
-    font-size: 18px;       
-   }
-    .sidebar li a {
-  font-size: 16px;
-}
-    .artext h1 {
-     font-size: 20px;   
-    }
-    .tags {
-  font-size: 12px;
-}
-    .tag h1 {
-  font-size: 22px;
-}
-    .ninja-forms-form-wrap .submit-wrap input {
+.ninja-forms-form-wrap .submit-wrap input {
   width: 100%!important;
 }
 
-.navbar-default{
-    overflow:auto;
-}
-    
-    
-    
-    
+
+   
     
 }
 
 
+@media screen and (max-width: 860px) {
 
-
-
-
-@media screen and (max-width: 767px) {
-    .col-xs-12 {
-    padding-right: 0px;
-    padding-left: 0px; 
+    .sousmilieu > .row {
+        top: -270px;
     }
-    #navbar-side{
-     margin-top: 30px;   
+}
+
+@media screen and (max-width: 700px) {
+   
+    .container {
+        padding-right: 0;
+        padding-left: 0;
     }
-    #navbar-side h3, #navbar-side h4 {
-      margin-top: 15px;    
+    .container > .navbar-header {
+        float: left !important;
+        margin: auto;
+        margin-bottom: 15px !important;
+        margin-top: 10px;
+    }
+    .navbar-nav > li > a {
+        font-size: 15px;
+        border: 0px;
+        color: #222 !important;
+    }
+    .navbar-default {
+        overflow: visible;   
+    }
+    .navbar-toggle {
+        z-index: 9;
+    }
+    .navbar-nav {
+        float: none;
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
     }
     #bs-example-navbar-collapse-1 {
-        height:auto!important;
-   width: 100%;
-  margin-top: 0px;
-  text-indent: 0px;
-  border-top: 0px solid grey;
-  padding-top: 0px;
-  padding-bottom: 20px;
-}   
-  
-   
-    .navbar-nav #menu-item-21:hover, .navbar-nav #menu-item-20:hover {
-  background:none;
-} 
-    .navbar-nav>li>a {
-  font-size: 12px;
-        border:0px;
-         color: white!important;
-}
-    .sub-menu>li {
-          width: 100%;
-        float:none;
+        background-color: white;
+        margin: 0px;
+        text-indent: 1px; 
+        border: 0px;
+        z-index: 8;
+        width: 100%;
+        height: auto !important;
+        max-height: 435px;
+        position: absolute;
     }
- .navbar-nav>li {
-  width: 100%;
-  height: auto;
-      float:none;
-}   
-
-.actu {
- border-bottom: 5px solid white;;   
-}
-.pushactu .last {
- border-right:5px solid white;   
-}
-#footer-sec .marge {
-  margin-right: 0%;
-}
-  #footer-sec{
-margin-bottom: 15px;
-  }
-.nav-haute {
-  width: 100%;
-}
-.actu{
-       padding-left: 0px;   
+    .nav li:first-child a {
+        padding-left: 15px;
     }
-    .pushactu .last h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.pushactu .first{   
-    padding-bottom: 0px;  
- }
-     .pushactu .second{   
-    padding-bottom: 0px;  
- }  
-    #navbar-side img {
-  max-height: 255px;
+    .sousmilieu > .row {
+        margin-top: 25px;
+        position: relative;
+        top: 0px;
     }
-   #navbar-side h4 {
-  background-position: 25px center;
-  background-size: 4%;
-} 
- .ariane {
-  margin-top: 6px;
-  font: 400 9px 'OpenSans';
-}   
-  .menuhaut li a {
-  font: 400 10px / 14px 'OpenSans';
-}  
-.pushactu .actu {
-     border:0px;
-    margin-bottom: 5px;    
-}
-    
-.pushactu .last h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-} 
-   .pushactu .last .picto img {
-    margin-top: -10px;
-      margin-left: 9%;
-   }
-     .actu {
-  border: 0px;
-}
-
-  .navbar-collapse {  
-    box-shadow: inset 0 0px 0 rgba(255,255,255,.1);  
-  }
-    .nav-haute li {
-  float: left;
-  margin-right: 1%;
-}
-
-    .actutitre h3 {
-  font: 700 16px / 20px 'OpenSans';
+    .sousmilieu {
+        overflow: hidden;
+        width: 98%;
     }
-    .actutitre .lien a {
-  font-size: 12px;
-     padding-bottom: 10px;
-  padding-top: 10px;     
-}
-   .actutitre .lien {
-  margin-top: 16px;
-   }
-    .actutext img {
-max-width: 100% !important;
-  width: auto !important;
-  min-height: initial;
-  max-height: none;
-}
- .actutext h5 {   
-      display: block !important;
-       background-color: rgba(67,34,89, 0.2);
- }
-    .navbar-header {
-  width: 35%;
-  margin: 0 auto !important;
+    .push {
+        margin-right: 0;
+        width: 100%;
+        
+        h2 {
+            padding-top: 20px;
+        }
     }
-
-    .side {
-  background-color: white;
-  width: 100%;
-  margin-left: 0%;
-  margin-top: 30px;
-  padding-bottom: 25px;
-}
-}
-    
-@media screen and (max-width: 470px) {    
-.nav-haute{
- width: 100%;   
-}
-    .pushactu .second{   
-    padding-bottom: 0px;  
- }   
-      .pushactu .first{   
-    padding-bottom: 0px;  
- }
-   .header-haut {
-  display: none!important;
-} 
-   #bs-example-navbar-collapse-1 {
-    height:auto!important;
-   width: 100%;
-  margin-top: 0px;
-  text-indent: 0px;
-  border-top: 0px solid grey;
-  padding-top: 0px;
-}   
-    .ninja-forms-form-wrap .submit-wrap input {
- width: 100%!important;
-}
-
- .retour {
-  width: 20%;
-}   
- .ariane {
-  width: 80%;
-  margin-top: 5px;
-  font: 400 11px 'OpenSans';
-  padding-bottom: 5px;
+    .pushimg {
+        position: relative;
+        top: 0;
     }
-
-    .pushactu .actu {
-     border:0px;
-    margin-bottom: 5px;    
+    .bas {
+        margin-top: 0px;
+        
+        h3 {
+            margin-top: 0px;
+        }
+        p {
+            box-sizing: border-box;
+            padding-right: 18px;
+            text-align: left;
+            width: 100%;
+        }
     }
-   .pushactu .last h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-} 
-   .pushactu .last .picto img {
-    margin-top: -10px;
-      margin-left: 13%;
-   }
-   .imgactu img, .artimage img {
-  max-height: 160px!important;
-       max-width: 100%!important;
-} 
- .actu {
-  border: 0px;
-}   
-
-    #footer-sec h8 {
-  font: 700 13px / 14px 'OpenSans';
+    .picto-arrow {
+        width: 30px;
+        height: 30px;
     }
-    #footer-sec p {
-  font: 400 13px / 17px 'OpenSans';
+    #fleche {
+        right: 1px;
     }
-   .artimage {
-  width: 100%;
-  margin-right: 0;
-} 
-
-    .artext {
-  width: 100%;
-  margin-top: 15px;
-}
-
-   .actutitre .lien {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-    .actutitre h3 {
-  margin-top: 14px;
-    }
-    .navbas-gauche, .navbas-droite{
-     width: 100%;
-        float: left;
-    }
-     .navbas-gauche{
-      margin-top: 15px;   
-     }
-    .navbas-gauche li {
-  float: left;
-        margin-right: 2%;
-          padding-right: 10px;
-    }
-  
-    .navbar-header {
-  width: 50%;
-    }
-
 }
