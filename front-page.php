@@ -90,7 +90,7 @@
         <div class="container basbas">
     <div class="row">
         
-       <div class="col-xs-12 col-sm-8 col-md-8 actumain">
+       <div class="col-xs-12 col-sm-12 col-md-8 actumain">
             <h4>Nos actualités</h4>
             
                  <?php  $my_query = new WP_Query( 'posts_per_page=4' );
@@ -141,7 +141,7 @@
 
         
         
-<?php echo do_shortcode("[huge_it_maps id='1']"); ?>
+<?php echo do_shortcode("[wpgmza id='1']"); ?>
 
 </div>
 
