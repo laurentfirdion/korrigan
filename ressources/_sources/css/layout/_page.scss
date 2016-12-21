@@ -1,0 +1,64 @@
+.mainmetiertext {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    &:first-child {
+        margin-top: 30px;
+    }
+} 
+
+.aside {
+    margin-top: 34px;
+}
+
+
+#navbarside {
+
+    ul.nav {
+        li {
+            
+            &.active {
+                
+                a {
+                    color: #e75d5d; 
+                }
+            }
+            a {
+               border-top: 1px solid #ddd;
+               color: #888;
+               padding: 10 25px;
+                
+                &:first-child {
+                    padding-left: 25px;
+                }
+                &:hover {
+                     color: #e75d5d; 
+                }
+            }
+        
+        }
+    }
+}
+
+.page-template-structure {
+    
+    
+    .background {
+        background-image: url(../img/html/background.png);
+        background-position: bottom center;
+        background-repeat: repeat-x;
+        background-color: #5eb28f;
+    }
+    h1 {
+        color: #fff;
+        font-family: 'Pacifico', cursive;
+        font-size: 36px;
+        text-align: center;
+        padding: 35px 0;
+    }
+    h2 {
+        font-size: 26px;
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+}

@@ -1,4 +1,16 @@
 //HEADER
+
+.logged-in {
+    
+    .menu-item-18, .menu-item-48 {
+        display: none;
+    }
+    .espace-membre {
+        display: block;
+    }
+}
+
+
 .nav>li>a:focus, .nav>li>a:hover {
   text-decoration: none;
   background-color: transparent;
@@ -14,12 +26,17 @@
 }
 .haut {
     background-color: #222;
+    
+    > .container{
+        padding-left: 0;
+        padding-right: 0;
+    }    
 }
 
 .nav-haute li a{
     color: white;
     text-transform: uppercase;
-     font-family: Arial;
+     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     display: block;
@@ -31,6 +48,25 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+.espace-membre {
+    display: none;
+    color: white;
+    text-transform: uppercase;
+     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+      -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
 .nav li {
     
     &:first-child {
@@ -46,16 +82,11 @@
     }
 }
 .navbar-default{
- background-image:none !important;
-  background: none;
+    background-image:none !important;
+    background: none;
     border: 0px white solid;
     box-shadow: none!important;
     overflow: hidden;
-    
-    > .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 .navbar-default .navbar-nav>li>a {
   color: #222;
@@ -82,9 +113,9 @@
     position: inherit;
 }
 .navbar-nav>li>a {
-    font-family: Arial;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     text-transform: uppercase;
       padding-top: 0px;
   padding-bottom: 0px;
@@ -111,9 +142,8 @@
    color: #e75d5d!important;
 }
 
-.nav-haute li, .navbas-droite li{
+.nav-haute li{
     float: left;
-     margin-right: 5%;
 }
 
 .navbar {
@@ -132,6 +162,7 @@
   width: 250px;
   float: left!important;
   margin-bottom: 0px!important;
+  margin-top: 5px;
   height: 80px;
 }
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {

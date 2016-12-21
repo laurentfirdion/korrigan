@@ -45,7 +45,7 @@ wp_nav_menu( $defaults );
 
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
-                    <h6>CONTACT</h6>
+                    <h6>Contact</h6>
 
                     <h5 class="heure"><span class="picto picto-clock"></span>Heures de garde</h5>
                     <p>Du lundi au vendredi de 8h00 à 18h00</p>

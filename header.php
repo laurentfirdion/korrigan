@@ -15,9 +15,9 @@
 		wp_head();
     ?>
         
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Pacifico" rel="stylesheet">
     </head>
-	<body <?php body_class();?> >
+	<body <?php body_class();?>>
  <div class="container-fluid principal" id="top">       
 
 <nav class="navbar-fixed-top"> 
@@ -47,6 +47,7 @@
 wp_nav_menu( $defaults );
 
 ?>
+              <a class="espace-membre" href="<?php bloginfo('url'); ?>/espace-membre">Espace membre</a>
             </div>
      <br class="stopfloat"/>
       </div>

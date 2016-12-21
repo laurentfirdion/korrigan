@@ -62,4 +62,11 @@
 
 a {
     cursor: pointer;
+    
+    &:hover {
+       color: #e75d5d;
+    }
+     &:focus {
+       color: #e75d5d;
+    }
 }

@@ -1,11 +1,8 @@
 #filariane {
-  margin-top: 0px;
-  margin-bottom: 26px;
-  background-color: #9d9e9e;
-  z-index: 99;
-  position: absolute;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
   width: 100%;
-      top: 0px;
 }
 
 .retour {
@@ -15,10 +12,11 @@
 
 .ariane {
     color: black;
-    font:300 13px / 14px 'Lato';
-     float:left;
+   
+    float:left;
     width: 90%;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 .ariane a{
      color: black;
