@@ -4,7 +4,12 @@
  get_header();
 	?>  
 <div class="container-fluid slider">
-<?php echo do_shortcode( '[rev_slider slider]' ); ?>
+    <?php echo do_shortcode( '[rev_slider slider]' ); ?>
+        <div class="tint">
+            <div class="welcome">
+                <h2>Bienvenue aux Korrigans</h2>
+            </div>
+        </div>
 </div>
 
 <div class="container-fluid milieu">
