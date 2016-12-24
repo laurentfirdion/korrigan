@@ -9,10 +9,7 @@ $('body').scrollspy({ target: '#navbarside', offset:400 });
 
 $('#navbarside').affix({
   offset: {
-    top: 50,
-    bottom: function () {
-      return (this.bottom = $('.footer').outerHeight(true))
-    }
+    top: 25
   }
 });
 

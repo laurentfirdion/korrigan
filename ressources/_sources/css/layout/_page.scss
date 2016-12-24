@@ -61,9 +61,40 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-      
-   
-   
+
+    }
+    
+    .actu-side {
+        h3 {
+               border-top: 3px solid #e75d5d;
+               color: #737373;
+               font-family: 'Pacifico', cursive;
+               font-size: 22px;
+               margin-top: 15px;
+               margin-bottom: 20px;
+               padding-top: 10px;
+               text-align: center;
+        }
+        h4 {
+            a {
+                color: #e75d5d;
+                
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+        p {
+            font-size: 13px;
+        }
+   /*     img {
+           display: block;
+           margin: auto; 
+           margin-bottom: 10px;
+           width: auto;
+           height: auto;
+           max-height: 100px;
+        }*/
     }
 }
 .page-template-structure {

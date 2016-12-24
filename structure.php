@@ -100,7 +100,30 @@
         <?php } ?>   
     </ul>
       
+        <div class="actu-side">
+             <h3>ACTUALITÉ</h3>
+    
+<?php $args = array(
+	'posts_per_page' => 1,
+	'post__in'  => get_option( 'sticky_posts' ),
+	'ignore_sticky_posts' => 1
+);
+$query = new WP_Query( $args ); 
+
+?>
+
+<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+    
+    <div class="sideactu">
+    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+        <p><?php the_excerpt(); ?></p>
+    </div>
+<?php endwhile; wp_reset_query();?>
+        </div>
+        
     </nav>
+  
+    
     </div>
 
 </div>

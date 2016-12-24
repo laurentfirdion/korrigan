@@ -30,6 +30,17 @@ $('#fleche a').on('click', function(evt){
               $("#fleche").removeClass('animated infinite bounceInDown')
           }
           
+          if( $('.affix').length){
+          var offsetfooter = $("footer").offset().top;
+          var offfooter = offsetfooter - 900;
+          if(scroll > offfooter){
+          $('.affix').hide();
+          }
+          else {                               
+         $('.affix').show();
+          }
+              
+          }
       });
        
       
