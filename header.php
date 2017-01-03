@@ -47,6 +47,13 @@
 wp_nav_menu( $defaults );
 
 ?>
+
+ <?php
+if ( is_user_logged_in() ) {
+     $current_user = wp_get_current_user();
+    echo '<span class="picto picto-user"></span><span class="name"> ' . $current_user->user_login . '</span>';
+} 
+?>
               <a class="espace-membre" href="<?php bloginfo('url'); ?>/espace-membre">Espace membre</a>
             </div>
      <br class="stopfloat"/>
@@ -65,7 +72,9 @@ wp_nav_menu( $defaults );
       </button>
     <div class="navbar-header">
     
-      <a class="navbar-brand" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/ressources/img/html/logo.png" alt="logo Korrigans"/></a>
+      <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+        Crêche des Korrigans
+     </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
