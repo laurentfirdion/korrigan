@@ -26,7 +26,44 @@
 <div class="container"> 
 
     
+<div class="col-xs-12 col-sm-3 col-md-3 aside hide_mobile">
+    <nav id="navbarside" class="affix-top">
+       
+   <ul class="nav">
+       
+        <li><a href="#partie1"><?php the_field('titre_1'); ?> <i class="fa fa-angle-right"><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></i></a></li>
+         <li><a href="#partie2"><?php the_field('titre_2'); ?><i class="fa fa-angle-right"><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></i></a></li>
+        <li><a href="#partie3"><?php the_field('titre_3'); ?><i class="fa fa-angle-right"><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></i></a></li>
+        <?php if(isset($value[0])) { ?>   
+       <li><a href="#partie4"><?php the_field('titre_4'); ?><i class="fa fa-angle-right"><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></i></a></li>
+        <?php } ?>   
+    </ul>
+      
+        <div class="actu-side">
+             <h3>ACTUALITÉ</h3>
     
+<?php $args = array(
+	'posts_per_page' => 1,
+	'post__in'  => get_option( 'sticky_posts' ),
+	'ignore_sticky_posts' => 1
+);
+$query = new WP_Query( $args ); 
+
+?>
+
+<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+    
+    <div class="sideactu">
+    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+        <p><?php the_excerpt(); ?></p>
+    </div>
+<?php endwhile; wp_reset_query();?>
+        </div>
+        
+    </nav>
+  
+    
+</div>    
     
     
 <div class="col-xs-12 col-sm-9 col-md-9 mainmetier">
@@ -87,44 +124,7 @@
      
     
     </div>
-<div class="col-xs-12 col-sm-3 col-md-3 aside">
-    <nav id="navbarside" class="affix-top">
-       
-   <ul class="nav">
-       
-        <li><a href="#partie1"><?php the_field('titre_1'); ?> <i class="fa fa-angle-right"><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></i></a></li>
-         <li><a href="#partie2"><?php the_field('titre_2'); ?><i class="fa fa-angle-right"><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></i></a></li>
-        <li><a href="#partie3"><?php the_field('titre_3'); ?><i class="fa fa-angle-right"><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></i></a></li>
-        <?php if(isset($value[0])) { ?>   
-       <li><a href="#partie4"><?php the_field('titre_4'); ?><i class="fa fa-angle-right"><span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></i></a></li>
-        <?php } ?>   
-    </ul>
-      
-        <div class="actu-side">
-             <h3>ACTUALITÉ</h3>
-    
-<?php $args = array(
-	'posts_per_page' => 1,
-	'post__in'  => get_option( 'sticky_posts' ),
-	'ignore_sticky_posts' => 1
-);
-$query = new WP_Query( $args ); 
 
-?>
-
-<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-    
-    <div class="sideactu">
-    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-        <p><?php the_excerpt(); ?></p>
-    </div>
-<?php endwhile; wp_reset_query();?>
-        </div>
-        
-    </nav>
-  
-    
-    </div>
 
 </div>
 
