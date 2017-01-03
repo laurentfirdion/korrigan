@@ -3,8 +3,31 @@
 * Template Name: Login Page
 */
  
-get_header('login'); ?>
+get_header(); ?>
  
+
+<div class="container-fluid" id="filariane"> 
+     <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="ariane">
+            <ol class="breadcrumb">
+                <li> <a href="<?php bloginfo('url'); ?>">ACCUEIL</a></li>
+                <li>
+                    <?php the_title();?>
+                </li>
+            </ol>
+        </div>
+        <br class="stopfloat" />
+    </div>
+</div>
+         <div class="background">
+           <h1><?php the_title();?></h1>
+         </div>  
+</div>
+<div class="container"> 
+
+<div class="col-xs-12 col-sm-12 col-md-12">
+
 
 <?php
    $args = array(
@@ -65,5 +88,6 @@ wp_login_form( $args );
       
 </div>
 
-
+    </div>
+</div>
 <?php get_footer(); ?>

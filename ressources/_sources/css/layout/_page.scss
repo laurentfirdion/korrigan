@@ -97,7 +97,7 @@
         }*/
     }
 }
-.page-template-structure {
+.page-template-structure, .page-template-login {
     
     
     .background {
@@ -133,5 +133,73 @@
         .background {
             background-color: #5eb28f;
         }
+    }
+    &.page-id-16 {
+        
+        .background {
+            background-color: #337ab7;
+        }
+    }
+}
+
+
+#loginform {
+    margin: auto;
+    width: 50%;
+    
+    label, input {
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+    label {
+        color: #737373;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    input {
+        height: 30px;
+        border: 1px solid #737373;
+        text-indent: 5px;
+    }
+    .login-remember {
+        margin: auto;
+        margin-bottom: 25px;
+        width: 300px;
+        
+        label, input {
+            display: inline-block;
+            margin: auto;
+            vertical-align: middle;
+            width: auto;
+        }
+        input {
+            margin-bottom: 2px;
+            margin-right: 6px;
+        }
+    }
+    #wp-submit {
+        background-color: #337ab7;
+        color: white;
+        font-size: 18px;
+        height: 40px;
+        
+        &:hover {
+            background-color: white;
+            color: #337ab7;
+        }
+    }
+}
+.bottom-link {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 50%;
+    
+    a {
+        color: #e75d5d;
     }
 }
