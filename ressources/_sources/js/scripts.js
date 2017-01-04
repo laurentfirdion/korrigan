@@ -15,7 +15,7 @@ $('#navbarside').affix({
 
 
 
-
+ 
 var navOffset = $('.navbar-fixed-top').height();
     
 
@@ -40,6 +40,12 @@ $(window).scroll(function(){
 });    
 
 }     
+    
+   $('.slidertemoin').slick({
+    infinite: true,
+    slidesToShow: 2,     
+   });  
+    
     
     
 });

@@ -53,6 +53,7 @@ module.exports = function(grunt) {
             //PLUGINS
             pathsToProject[app] + '_sources/js/plugins/bootstrap.min.js',
             pathsToProject[app] + '_sources/js/plugins/wow.min.js',  
+            pathsToProject[app] + '_sources/js/plugins/slick.min.js',  
             pathsToProject[app] + '_sources/js/fonctions/fleche.js',     
             pathsToProject[app] + '_sources/js/scripts.js',
         ]
