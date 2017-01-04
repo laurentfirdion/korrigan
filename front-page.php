@@ -17,9 +17,9 @@
 <div class="row">
 <div class="col-xs-4 col-sm-4 col-md-4 push pushleft">
 
-    <h2><?php the_field('titre_push1'); ?></h2>
+    <h2><a href="<?php bloginfo('url'); ?>/structure-parentale"><?php the_field('titre_push1'); ?></a></h2>
     
-        <a href="<?php // the_field('lien1'); ?>"></a>
+      
         <div class="pushimg">
             <span class="picto picto-parents"></span>  
         </div>
@@ -27,15 +27,15 @@
         <div class="pushtext">
         <hr class="traitblanc"/>
         <?php the_field('text_push1'); ?>
-            <span><a href="<?php //the_field('lien1'); ?>">Découvrir</a></span>
+          
         </div>
    
     </div>
 <div class="col-xs-4 col-sm-4 col-md-4 push pushmiddle">
       
-     <h2><?php the_field('titre_push2'); ?></h2>
+    <h2><a href="<?php bloginfo('url'); ?>/creche"><?php the_field('titre_push2'); ?></a></h2>
     
-        <a href="<?php //the_field('lien2'); ?>">  </a>
+    
         <div class="pushimg">
                 <span class="picto picto-ours"></span>
         </div>
@@ -43,15 +43,15 @@
         <div class="pushtext">
         <hr class="traitblanc"/>
           <?php the_field('text_push2'); ?>
-            <span><a href="<?php //the_field('lien2'); ?>">Découvrir</a></span>
+           
         </div>
    
     </div>   
  <div class="col-xs-4 col-sm-4 col-md-4 push pushright">
       
-     <h2><?php the_field('titre_push3'); ?></h2>
+     <h2><a href="<?php bloginfo('url'); ?>/valeurs"><?php the_field('titre_push3'); ?></a></h2>
     
-        <a href="<?php //the_field('lien3'); ?>"> </a>
+     
          <div class="pushimg">
              <span class="picto picto-castle"></span>
         </div>
@@ -59,7 +59,7 @@
         <div class="pushtext">
         <hr class="traitblanc"/>
          <?php the_field('text_push3'); ?>
-            <span><a href="<?php //the_field('lien3'); ?>">Découvrir</a></span>
+       
         </div>
    
     </div>   
