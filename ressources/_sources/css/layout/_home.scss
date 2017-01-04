@@ -69,6 +69,14 @@
     padding-bottom: 15px;
     padding-top: 70px;
     margin-top: 0px;
+    
+    a {
+        color: #ffffff;
+        
+        &:hover {
+            color: #222;
+        }
+    }
 }
 .sousmilieu {
     overflow: visible;
