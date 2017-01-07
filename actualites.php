@@ -4,19 +4,37 @@
  get_header();
 	?>  
 
-  <div class="container" id="filariane"> 
-           <div class="retour hvr-bubble-float-left"><a href="javascript:history.go(-1)"><img src="<?php bloginfo('template_url'); ?>/img/retour2.png" alt="bouton retour"/></a></div><div class="ariane"><ol class="breadcrumb">
-  <li> <a href="<?php bloginfo('url'); ?>">ACCUEIL</a></li>
-  <li><?php the_title(); ?></li>
-  
-</ol>
-           </div>
-           <br class="stopfloat"/>
+<div class="container-fluid" id="filariane">
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="ariane">
+                <ol class="breadcrumb">
+                    <li> <a href="<?php bloginfo('url'); ?>">ACCUEIL</a></li>
+                    <li>
+                        <?php the_title();?>
+                    </li>
+                </ol>
+            </div>
+            <br class="stopfloat" />
+        </div>
     </div>
-<div class="container">
+    <div class="background">
+        <h1><?php the_title();?></h1>
+    </div>
+</div>
+<div class="container actu">
 
-   <div class="row"> 
-<div class="col-xs-12 col-sm-9 col-md-9 maininitial">
+ <div class="col-xs-12 col-sm-3 col-md-3 aside hide_mobile">
+     
+       <div class="sidebar">
+         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar-widget") ) : ?>
+					
+		 <?php endif; ?>
+       </div>
+</div>
+    
+
+<div class="col-xs-12 col-sm-9 col-md-9 actumain">
     
      
 
@@ -24,22 +42,26 @@
    <?php
 query_posts('showpost=-1');
         if ( have_posts() ): while ( have_posts()) : the_post(); ?>       
-            <div class="article">
-                <div class="artimage">
-            <?php the_post_thumbnail('medium')?>
-                </div>
-            <div class="artext">  
-                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-               
-             
-                
-       <?php the_excerpt(); ?><br>
-                
-             
-               
-                </div> 
-              <br class="nofloat"/>
-               </div> 
+  <div class="actu-item">
+    <h2 class="titreactu"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>  
+    <span class="date"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+    <?php the_time('j F Y'); ?></span>
+    <span class="author"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><?php the_author(); ?></span>
+    <span class="comments"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><?php  comments_number(' 0','1','%'); 
+        if(get_comments_number() > 1){ echo ' commentaires';} else { echo ' commentaire';}; ?> </span>  
+    <div class="actuimg">
+        <?php the_post_thumbnail( 'full' ); ?>
+
+    </div>
+    <div class="actutext">
+       
+        <p>
+            <?php the_excerpt(); ?>
+        </p>
+
+    </div>
+
+</div>
              
     
        <?php endwhile; else: ?>
@@ -55,20 +77,9 @@ query_posts('showpost=-1');
     
   
 
-    
-     </div>
- <div class="col-xs-12 col-sm-3 col-md-3"> 
-     <div id="aside">
-         <div class="sidebar">
-         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar-widget") ) : ?>
-					
-				<?php endif; ?>
-         </div>
-           <div class="lien"><a href="<?php bloginfo('url'); ?>/nous-contacter">CONTACTEZ NOUS</a></div> 
-     </div>
-    
-     </div>
-    </div>  
+</div>
+
+   
     
     
     

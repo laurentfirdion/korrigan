@@ -1,75 +1,34 @@
-.article {
-    width:100%;
-    margin-top: 25px;
-  margin-bottom: 25px;
-  overflow: hidden;
-  background: white;
-  padding: 15px;
+.sidebar {
 
-}
+    h3{
+        border-top: 3px solid #e75d5d;
+        color: #737373;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding-top: 16px;
+        text-align: center;  
+    }
+    li {
+        margin-bottom: 20px;
+        
+        a {
+            color:#e75d5d;
+            font-size: 17px;
+        
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
 
-.artimage {
-    width: 35%;
-    float: left;
-    margin-right: 5%;
-}
-.artext h1{
- margin-bottom: 25px;
-    margin-top: 15px;
-}
-.artext {
-    float:left;
-    width:60%;
-}
-.artext a{
-    color:#300f66;
-}
-.artext h3{
- margin-top: 0px;
-    margin-bottom: 25px;
-}
+    .comment-author-link a{
+        color:#777;
+        
+        &:hover {
+            color:#e75d5d;    
+            font-weight: normal;
+        }
+    }
 
-sidebar h3{
- margin-bottom: 20px;   
-}
-.tagcloud a{
-      color: #e4dfed;
-}
-.tagcloud {
-  margin-bottom: 20px;
-}
-.sideart {
-    width:25%;
-    float: right;
-}
-.sidebar li a{
-    color:#a48dc9;
-    font-size: 17px;
-}
-.sidebar li a:hover, .artext a:hover, .tagcloud a:hover{
-    opacity: 0.8;
-}
-.author {
-    color:#a48dc9;
-}
-
-.tags a{
-    color: #300f66;
-}
-.tags{
-  margin-left: 4%;  
-    font-size: 14px;
-}
-.sidebar h3 {
-color: white;
-}
-.postetitre, .postetext {
-    width:32.66%;
-    float:left;
-    margin-right: 1%;
- 
-}
-.tag h1{
-color:white;
-    font-size: 28px;
 }

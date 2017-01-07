@@ -68,8 +68,7 @@
         h3 {
                border-top: 3px solid #e75d5d;
                color: #737373;
-               font-family: 'Pacifico', cursive;
-               font-size: 22px;
+               font-size: 18px;
                margin-top: 15px;
                margin-bottom: 20px;
                padding-top: 10px;
@@ -97,7 +96,7 @@
         }*/
     }
 }
-.page-template-structure, .page-template-login {
+.page-template-structure, .page-template-login, .page-template-actualites {
     
     
     .background {
@@ -118,8 +117,21 @@
         font-weight: 300;
         margin-bottom: 25px;
     }
+    .equipe {
+        
+         h2 {
+            margin-bottom: 50px;
+        }
+    }
     img {
         margin-bottom: 15px;
+    }
+    .slidertemoin {
+        
+        h3 {
+            font-size: 22px;
+            text-align: center;
+        }
     }
 
     &.page-id-30 {
@@ -140,8 +152,33 @@
             background-color: #337ab7;
         }
     }
+    
+    .actu {
+        background: none;
+        
+        .actumain {
+            padding-top: 30px;
+            float: left; 
+        }
+        h2 a{
+            color: #222;
+            font-family: 'Pacifico', cursive;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .actutext p {
+            color: black;
+        }
+        .actuimg {
+            background-color: transparent;
+            float: none;
+            min-height: 0px;
+            width: 100%;
+            margin-right: 0;
+        }
+    }
 }
-
 
 #loginform {
     margin: auto;

@@ -50,7 +50,11 @@
                 </div>
                 
                </div> 
-            
+                  <?php
+                global $withcomments;
+                $withcomments = true;
+                comments_template();
+                ?> 
     
        <?php endwhile; else: ?>
        <p>Aucun résultat</p>
