@@ -109,7 +109,7 @@ $query = new WP_Query( $args );
     
     if($value == "L’équipe"){ ?>
         
-    <div id="partie4" class="mainmetiertext">
+    <div id="partie4" class="mainmetiertext equipe">
 
         <h2><?php the_field('titre_4'); ?></h2>
     <div class="slidertemoin">
@@ -135,7 +135,7 @@ $query = new WP_Query( $args );
         
          <div class="col-xs-6 col-sm-6 col-md-6 temoin">
             <img src="<?php bloginfo('template_url'); ?>/ressources/img/sprites/svg/<?php echo $image ?>.svg" /> 
-             <h2><?php the_field('nom'); ?></h2>
+             <h3><?php the_field('nom'); ?></h3>
                
              <br class="stopfloat"/>
              <?php the_field('presentation'); ?>

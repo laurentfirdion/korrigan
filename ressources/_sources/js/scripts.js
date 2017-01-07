@@ -42,8 +42,19 @@ $(window).scroll(function(){
 }     
     
    $('.slidertemoin').slick({
+    dots: true,
     infinite: true,
-    slidesToShow: 2,     
+    slidesToShow: 2,  
+    responsive: [
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+ 
+   ]
    });  
     
     
