@@ -32,7 +32,7 @@ $('#fleche a').on('click', function(evt){
           
           if( $('.affix').length){
           var offsetfooter = $("footer").offset().top;
-          var offfooter = offsetfooter - 900;
+          var offfooter = offsetfooter - 0;
           if(scroll > offfooter){
           $('.affix').hide();
           }

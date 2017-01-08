@@ -200,9 +200,9 @@
 }
 
 .actu {
-    background-image: url(../img/html/background.png);
-    background-position: bottom center;
-    background-repeat: repeat-x;
+    background-image: url(../img/html/background.png), url(../img/html/background.png);
+    background-position: bottom center, top center;
+    background-repeat: repeat-x, repeat-x;
     background-color: #e75d5d;
     overflow: hidden;
     padding-bottom: 25px;

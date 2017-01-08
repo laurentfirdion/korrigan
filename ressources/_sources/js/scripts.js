@@ -9,7 +9,7 @@ $('body').scrollspy({ target: '#navbarside', offset:400 });
 
 $('#navbarside').affix({
   offset: {
-    top: 25
+    top: -80
   }
 });
 
