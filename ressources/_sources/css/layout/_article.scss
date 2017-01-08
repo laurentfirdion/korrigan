@@ -1,23 +1,23 @@
 .sidebar {
 
     h3{
-        border-top: 3px solid #e75d5d;
-        color: #737373;
-        font-size: 18px;
+        border-top: 3px solid #888;
+        color: #e75d5d;
+        font-size: 20px;
         margin-top: 15px;
         margin-bottom: 30px;
         padding-top: 16px;
-        text-align: center;  
+        text-align: left;  
     }
     li {
         margin-bottom: 20px;
         
         a {
-            color:#e75d5d;
+            color:#888;
             font-size: 17px;
         
             &:hover {
-                font-weight: bold;
+                color: #333;
             }
         }
     }
@@ -31,4 +31,78 @@
         }
     }
 
+}
+
+    
+.actu.actu-detail {
+        
+        .actu-item {
+            
+            h2 {
+                font-size: 32px;
+                margin-top: 0;
+            }
+            .details {
+                
+                .date {
+                    margin-left: 6px;
+                }
+                .glyphicon-calendar {
+                    margin-right: 4px;
+                }
+            }
+        }
+        .comments-area {
+            margin-bottom: 35px;
+            
+            h3 {
+                color: #e75d5d;
+                font-family: 'Pacifico', cursive;
+            }
+            a {
+                color: #e75d5d;
+                
+                &:hover {
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+            }
+            label {
+                color: #888;
+                font-weight: bold;
+                display: block;
+            }
+            textarea {
+                border-color: rgb(221, 221, 221);
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                width: 100%;
+            }
+            .submit {
+                background-color: #e75d5d; 
+                border: 1px solid transparent; 
+                color: white;
+                height: 30px;
+                
+                &:hover {
+                    background-color: white;
+                    border: 1px solid #e75d5d; 
+                    color: #e75d5d; 
+                }
+            }
+        }
+    .linkprev a, .linknext a {
+        color: #e75d5d; 
+        font-size: 18px;
+        
+        &:hover {
+            font-weight: bold;
+        }
+    }
+    .linkprev {
+        float: left;
+    }
+    .linknext {
+        float: right;
+    }
 }
