@@ -1,20 +1,20 @@
 <?php
 
-get_header('error'); 
+get_header(); 
 
 ?>
    
- <div class="container-fluid principal">   
+
 <div class="container">
-<div class="col-xs-12 col-sm-9 col-md-9 maininsc">
+<div class="col-xs-12 col-sm-12 col-md-12 error">
 		
-    <h1>ERREUR 404</h1>
+    <h1>Oups, vous faites erreur</h1>
     <h2>La page que vous demandez n'existe pas.</h2>
 
-    
+    <a href="<?php bloginfo('url'); ?>">Revenir à l'accueil</a>
     </div>
  
-     </div>
 </div>
+
 
 <?php get_footer(); ?>
