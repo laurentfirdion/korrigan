@@ -96,7 +96,29 @@
         }*/
     }
 }
-.page-template-structure, .page-template-login, .page-template-actualites, .single-post, .search {
+
+.button {
+            background-color: #e75d5d; 
+            border: 1px solid transparent; 
+            box-sizing: border-box;
+            color: white;
+            display: block;
+            font-size: 18px;
+            line-height: 24px;
+            margin: auto;
+            margin-top: 40px;
+            padding: 12px 0;
+            text-align: center;
+            width: 300px;
+            
+            &:hover {
+                background-color: white;
+                border: 1px solid #e75d5d; 
+                color: #e75d5d; 
+                font-weight: normal;
+            }
+}
+.page-template-structure, .page-template-login, .page-template-actualites, .single-post, .search, .page-template-contact {
     
     
     .background {
@@ -146,7 +168,7 @@
             background-color: #5eb28f;
         }
     }
-    &.page-id-16 {
+    &.page-id-16, &.page-id-34 {
         
         .background {
             background-color: #337ab7;
