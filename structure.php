@@ -161,6 +161,12 @@ $query = new WP_Query( $args );
         
              <?php the_field('texte_4'); ?>
     
+        
+        <?php $pdf = get_field('formulaire_inscription_braderie'); 
+        if(isset($pdf[0])){ ?>
+            <a class="button" href="<?php echo $pdf ?>" target="_blank">Formulaire d'inscription à la braderie</a>
+       <?php }
+        ?>
     </div>
     
     
