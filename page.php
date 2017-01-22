@@ -14,7 +14,7 @@
 get_header(); ?>
 <div class="container"> 
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div class="col-xs-12 col-sm-12 col-md-12">
 
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
