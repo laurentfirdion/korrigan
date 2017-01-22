@@ -1,5 +1,5 @@
 <?php
-//Template Name: Contact
+//Template Name: membership
  
  get_header();
 	?>  
@@ -84,14 +84,43 @@ $query = new WP_Query( $args );
     
 <div class="col-xs-12 col-sm-9 col-md-9 mainmetier">
     
-<?php echo do_shortcode( '[ninja_form id=1]' ); ?>
+<h2>Fichiers utiles</h2>
   
-    <div class="othercontact">
-    <h3><?php the_field('titre'); ?></h3>
-   <?php the_field('texte'); ?>
+      <?php  $query = new WP_Query(array(
+	'post_type'			=> 'fichier',
+	'posts_per_page'	=> -1,
+	'order'				=> 'ASC'
+));
+            while ( $query->have_posts() ) : $query->the_post(); 
+    $pdf = get_field('fichier'); 
+    ?>
+    
+        <div class="fichier">
+           <a class="button" href="<?php echo $pdf ?>" target="_blank"><?php the_field('nom'); ?></a>
+        </div>
     
     
-     </div>
+      <?php endwhile; wp_reset_postdata(); ?> 
+    
+    
+    <br class="stopfloat" />
+    
+    <div class="partage-photo">
+    <h2>Partager une photo</h2>
+    
+       <?php the_field('texte'); ?>
+        
+      <?php echo do_shortcode( '[wordpress_file_upload singlebutton="true" uploadpath="uploads/partage" uploadpatterns="*.jpg,*.jpeg,*.png,*.gif" maxsize="1" duplicatespolicy="maintain both" placements="selectbutton+uploadbutton+progressbar/message" uploadtitle="Votre fichier ?" widths="message:100%" heights="message:50" userdatalabel="Votre fichier ?|t:text|s:none|r:0|a:0|p:inline|d:"]' ); ?>
+    
+        
+   
+           <a class="button-galerie" href="<?php bloginfo('url'); ?>/galerie">Voir la galerie</a>
+       
+        
+    </div>
+    
+
+    
 </div>
 
 

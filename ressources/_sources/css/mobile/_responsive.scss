@@ -79,6 +79,14 @@
         top: -270px;
     }
 }
+@media screen and (max-width: 768px) {
+    .ninja-forms-form-wrap input, .ninja-forms-form-wrap textarea, .ninja-forms-required-items {
+        border: 1px solid grey;
+    }
+    .page-template-contact .mainmetier .ninja-forms-form-wrap .submit-wrap input, .page-template-espace-membre .mainmetier .ninja-forms-form-wrap .submit-wrap input, .page-template-galerie .mainmetier .ninja-forms-form-wrap .submit-wrap input {
+        width: 50% !important;
+    }
+}
 
 @media screen and (max-width: 700px) {
    
@@ -123,6 +131,14 @@
     .nav li:first-child a {
         padding-left: 15px;
     }
+    
+    .name {
+        margin-right: 20px;
+    }
+    #galerie {
+        margin-right: 7px;
+    }
+    
     .sousmilieu > .row {
         margin-top: 25px;
         position: relative;
@@ -170,5 +186,17 @@
     .actu.actu-detail .linknext {
         float: left;
         margin-top: 20px;
+    }
+    .page-template-galerie .mainmetier .grid-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        float: none;
+    }
+    .ninja-forms-form-wrap input, .ninja-forms-form-wrap textarea, .ninja-forms-required-items {
+        border: 1px solid grey;
+    }
+    .page-template-contact .mainmetier .ninja-forms-form-wrap .submit-wrap input, .page-template-espace-membre .mainmetier .ninja-forms-form-wrap .submit-wrap input, .page-template-galerie .mainmetier .ninja-forms-form-wrap .submit-wrap input {
+        width: 100% !important;
     }
 }

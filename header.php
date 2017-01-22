@@ -16,6 +16,8 @@
     ?>
         
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Pacifico" rel="stylesheet">
+        <!--##############################################-->
+        <!-- Site réalisé et développé par Laurent Firdion-->
     </head>
 	<body <?php body_class();?>>
  <div class="container-fluid principal" id="top">       
@@ -54,7 +56,8 @@ if ( is_user_logged_in() ) {
     echo '<span class="picto picto-user"></span><span class="name"> ' . $current_user->user_login . '</span>';
 } 
 ?>
-              <a class="espace-membre" href="<?php bloginfo('url'); ?>/espace-membre">Espace membre</a>
+              <a id="espace" class="espace-membre" href="<?php bloginfo('url'); ?>/espace-membre">Espace membre</a>
+              <a id="galerie" class="espace-membre" href="<?php bloginfo('url'); ?>/galerie">Galerie</a>
             </div>
      <br class="stopfloat"/>
       </div>

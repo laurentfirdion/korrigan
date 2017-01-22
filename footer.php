@@ -47,16 +47,19 @@ wp_nav_menu( $defaults );
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <h6>Contact</h6>
 
+                     <?php  $query = new WP_Query( 'post_type=info' ); 
+                    while ( $query->have_posts() ) : $query->the_post(); ?>
+                    
                     <h5 class="heure"><span class="picto picto-clock"></span>Heures de garde</h5>
-                    <p>Du lundi au vendredi de 8h00 à 18h00</p>
+                    <?php the_field('horaires'); ?>
                     <h5 class="adresse"><span class="picto picto-adress"></span>Adresse</h5>
-                    <p>4 bis rue Les Temps Modernes<br />
-                    35250 Chevaigné
-                    </p>
+                    <?php the_field('adresse'); ?>
                     <h5 class="telephone"><span class="picto picto-phone"></span>Téléphone</h5>
-                    <p>02 99 55 15 16</p>
+                    <p> <?php the_field('telephone'); ?> </p>
                     <h5 class="mail"><span class="picto picto-email"></span>Mail</h5>
-                    <p>asso.korrigans@gmail.com</p>
+                    <p> <?php the_field('email'); ?> </p>
+                    
+                     <?php endwhile; wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>

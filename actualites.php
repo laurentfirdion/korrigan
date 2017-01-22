@@ -24,7 +24,7 @@
 </div>
 <div class="container actu">
 
- <div class="col-xs-12 col-sm-3 col-md-3 aside hide_mobile">
+ <div class="col-xs-12 col-sm-3 col-md-3 aside">
      
        <div class="sidebar">
          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("sidebar-widget") ) : ?>

@@ -115,7 +115,12 @@ $query = new WP_Query( $args );
     <div class="slidertemoin">
         
         
-         <?php  $query = new WP_Query( 'post_type=personnel' ); 
+  
+<?php  $query = new WP_Query(array(
+	'post_type'			=> 'personnel',
+	'posts_per_page'	=> -1,
+));                  
+                             
       while ( $query->have_posts() ) : $query->the_post(); 
         
         $image= get_field('image');

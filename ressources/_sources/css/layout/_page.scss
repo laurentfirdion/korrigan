@@ -117,8 +117,12 @@
                 color: #e75d5d; 
                 font-weight: normal;
             }
+            &:focus {
+                color: white;
+            }
+        
 }
-.page-template-structure, .page-template-login, .page-template-actualites, .single-post, .search, .page-template-contact {
+.page-template-structure, .page-template-login, .page-template-actualites, .single-post, .search, .page-template-contact, .page-template-espace-membre, .page-template-galerie {
     
     
     .background {
@@ -267,6 +271,13 @@
         }
     }
 }
+.othercontact {
+    margin-top: 50px;
+    
+    h3 {
+        margin-bottom: 35px;
+    }
+}
 
 #loginform {
     margin: auto;
@@ -326,6 +337,13 @@
     
     a {
         color: #e75d5d;
+        
+        &:hover {
+           color: #337ab7; 
+        }
+    }
+    .reset-link {
+        margin-top: 10px;
     }
 }
 
@@ -351,6 +369,215 @@
             border: 1px solid #e75d5d; 
             color: #e75d5d; 
             font-weight: normal;
+        }
+    }
+} 
+
+.page-template-contact, .page-template-espace-membre, .page-template-galerie {
+    
+    .aside {
+        margin-top: 10px;
+        
+        #navbarside .actu-side h3 {
+            border-top: 3px solid #337ab7;
+        }
+        #navbarside .actu-side h4 a {
+            color: #337ab7;
+        }
+        
+        h4 {
+            color: #337ab7; 
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            
+            &.telephone {
+                margin-top: 18px;
+            }
+        }
+        div.heure, div.adresse, div.telephone, div.mail {
+            margin-bottom: 25px;
+        }
+        .picto {    
+            margin-right: 7px;
+        }
+        .picto-adress-black {
+           vertical-align: text-bottom;
+        }
+        .picto-phone-black, .picto-email-black {
+           vertical-align: text-bottom;
+        }
+        .read-more:hover {
+             color: #337ab7; 
+        }
+    }
+    .mainmetier {
+         padding-bottom: 50px;
+        
+        .nf-form-fields-required {
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+        .ninja-forms-form-wrap .submit-wrap input {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #337ab7;
+            background-color: white;
+            padding: 9px 21px 9px 21px;
+            width: 20% !important;
+            border: 1px solid #337ab7;
+            
+            &:hover {
+                background-color: #337ab7;
+                color: white;
+                border: 1px solid #337ab7;
+            }
+        }
+    }
+}
+.page-template-espace-membre {
+    #espace {
+        color: #e75d5d; 
+    }
+}
+.page-template-galerie {
+    #galerie {
+        color: #e75d5d; 
+    }
+}
+.page-template-espace-membre,.page-template-galerie {
+    .aside {
+     h4 {
+        color: #e75d5d; 
+    }
+     #navbarside .actu-side h3 {
+        border-top: 3px solid #e75d5d;
+    }
+    #navbarside .actu-side h4 a {
+        color: #e75d5d;
+    }
+    .read-more:hover {
+        color: #e75d5d; 
+    }
+    }
+    
+    .mainmetier {
+        overflow: hidden;
+        
+        .fichier {
+            float: left;
+            margin-bottom: 25px;
+            width: 50%;
+        }
+        .button {
+            margin: 0;
+            margin-top: 40px;
+            
+            &.center {
+                margin-top: 50px;
+                margin: auto;
+            }
+        }
+        
+        .partage-photo {
+            margin-bottom: 45px;
+            margin-top: 45px;
+            
+            p {
+                color: #737373;
+                font-size: 15px;
+                margin-top: 50px;
+            }
+            input[type=text].file_input_textbox {
+                border: 1px solid #e75d5d; 
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: center;
+                width: 200px;
+                height: 50px;
+            }
+            input[type=button].file_input_button, .button-galerie {
+                border: 1px solid #e75d5d; 
+                background-image: none;
+                background-color: white;
+                color: #e75d5d;
+                cursor: pointer;
+                width: 200px;
+                height: 50px;
+                position: relative;
+            }
+            .file_input_button_hover {
+                background-image: none;
+                background-color: #e75d5d;
+                border: 1px solid #e75d5d; 
+                color: white;
+                cursor: pointer;
+                width: 200px;
+                height: 50px;
+            }
+            form.file_input_uploadform {
+                margin-top: 20px;
+                height: 50px;
+                width: 200px;
+            }
+            input[type=button].file_input_submit {
+                border: 1px solid #e75d5d; 
+                background-image: none;
+                margin-top: 20px;
+                width: 200px;
+                height: 50px;
+            }
+           div.file_div_clean {
+               margin-bottom: 8px;
+           }
+           .button-galerie {
+                border: 1px solid #e75d5d; 
+                background-image: none;
+                background-color: white;
+                color: #e75d5d;
+                cursor: pointer;
+                width: 200px;
+                height: 50px;
+                position: relative;
+                display: block;
+                text-align: center;
+                line-height: 50px;
+               
+               &:hover {
+                   background-color: #e75d5d;
+                   border: 1px solid #e75d5d; 
+                   color: white;
+               }
+            }
+        }
+        .grid-item {
+            width: 32%;
+            margin-right: 1%;
+            float: left;
+       -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 995px) {
+    
+    .page-template-espace-membre {
+        
+        .mainmetier {
+            
+            .fichier {
+                width: 100%;
+            }
         }
     }
 }

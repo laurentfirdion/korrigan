@@ -51,12 +51,17 @@ $(window).scroll(function(){
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
-      }
+      } 
     }
  
    ]
    });  
+     
     
+  $("img.lazy").lazyload();
     
-    
+  $("a.fancybox").fancybox({
+     'openEffect':'elastic'
+          
+  });
 });

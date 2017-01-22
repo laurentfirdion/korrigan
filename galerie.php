@@ -1,5 +1,5 @@
 <?php
-//Template Name: Contact
+//Template Name: galerie
  
  get_header();
 	?>  
@@ -84,14 +84,36 @@ $query = new WP_Query( $args );
     
 <div class="col-xs-12 col-sm-9 col-md-9 mainmetier">
     
-<?php echo do_shortcode( '[ninja_form id=1]' ); ?>
-  
-    <div class="othercontact">
-    <h3><?php the_field('titre'); ?></h3>
-   <?php the_field('texte'); ?>
+    <h2>Photos partagées</h2>
+    <div class="grid"> 
+       
+   <?php
+$uploads = wp_upload_dir();
+
+if ($dir = opendir($uploads['basedir'].'/partage')) {
+	$images = array();
+    $nb = 0;
+	while (false !== ($file = readdir($dir))) {
+		if ($file != "." && $file != ".." && preg_match('#\.(jpe?g|gif|png)$#i', $file) && $nb < 100) {
+			$images[] = $file; 
+            $nb++;
+		}
+	}
+	closedir($dir);
+}
+
+
+foreach($images as $image) {
+	echo '<div class="grid-item"><a class="fancybox" rel="group" href="';
+    echo $uploads['baseurl'].'/partage/'.$image;
+    echo '"width="100%"><img class="lazy" data-original="';
+	echo $uploads['baseurl'].'/partage/'.$image;
+	echo '" alt="" scale="0"/></a></div>';
+}
+
+?>
     
-    
-     </div>
+    </div>   
 </div>
 
 

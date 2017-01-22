@@ -30,7 +30,16 @@ Redirecting wp-login.php to our custom page
 function redirect_login_page() {
    $login_page = home_url( '/connexion/' );
    $page_viewed = basename($_SERVER['REQUEST_URI']);
+
    if( $page_viewed == "wp-login.php" && $_SERVER['REQUEST_METHOD'] == 'GET') {
+       wp_redirect($login_page);
+       exit;
+   }
+   if( $page_viewed == "galerie" && $_SERVER['REQUEST_METHOD'] == 'GET' && is_user_logged_in() == false) {
+       wp_redirect($login_page);
+       exit;
+   }
+  if( $page_viewed == "espace-membre" && $_SERVER['REQUEST_METHOD'] == 'GET' && is_user_logged_in() == false) {
        wp_redirect($login_page);
        exit;
    }
