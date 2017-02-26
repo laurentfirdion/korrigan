@@ -96,7 +96,7 @@
     <div class="row">
         
        <div class="col-xs-12 col-sm-12 col-md-8 actumain">
-            <h4>Nos actualités</h4>
+            <h4>Nos dernières actualités</h4>
             
                  <?php  $my_query = new WP_Query( 'posts_per_page=4' );
             while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
@@ -115,6 +115,7 @@
              
                 <?php endwhile; wp_reset_query();?>
                 
+            <a style="display: block;color: white;margin-top: 40px;font-size: 24px;margin-bottom: 15px;text-align: center;" href="<?php bloginfo('url'); ?>/actualites"> Voir toutes les actualités</a>
         </div>
         
     </div>

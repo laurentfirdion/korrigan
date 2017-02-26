@@ -57,6 +57,21 @@ $(window).scroll(function(){
    ]
    });  
      
+     $('.sliderlocaux').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,  
+    responsive: [
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      } 
+    }
+ 
+   ]
+   });  
     
   $("img.lazy").lazyload();
     

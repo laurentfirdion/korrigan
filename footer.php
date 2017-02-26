@@ -50,7 +50,7 @@ wp_nav_menu( $defaults );
                      <?php  $query = new WP_Query( 'post_type=info' ); 
                     while ( $query->have_posts() ) : $query->the_post(); ?>
                     
-                    <h5 class="heure"><span class="picto picto-clock"></span>Heures de garde</h5>
+                    <h5 class="heure"><span class="picto picto-clock"></span>Horaires</h5>
                     <?php the_field('horaires'); ?>
                     <h5 class="adresse"><span class="picto picto-adress"></span>Adresse</h5>
                     <?php the_field('adresse'); ?>

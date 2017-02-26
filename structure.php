@@ -88,7 +88,33 @@ $query = new WP_Query( $args );
         <h2><?php the_field('titre_2'); ?></h2>
             
               <img src="<?php the_field('image_2'); ?>" />
-   
+            
+            
+        <?php $slider = get_field('display-slider');
+    
+        if($slider){ ?>
+          <div class="sliderlocaux">   
+            
+    <?php
+     $query = new WP_Query(array(
+	'post_type'			=> 'locaux',
+	'posts_per_page'	=> -1,
+     ));                  
+        while ( $query->have_posts() ) : $query->the_post(); 
+    ?>
+            
+            <div class="col-xs-12 col-sm-12 col-md-12 locaux">
+                 <img src="<?php the_field('slide'); ?>" />
+            </div>
+                 
+           <?php endwhile; wp_reset_postdata();
+     //fin loop $ma_boucle
+            ?>
+        </div>
+            
+        <?php } ?>
+            
+            
             <?php the_field('texte_2'); ?>
     </div>
     
@@ -105,9 +131,9 @@ $query = new WP_Query( $args );
     
     </div>
     
-    <?php $value = get_field('titre_4');
+    <?php $value = get_field('display-team');
     
-    if($value == "L’équipe"){ ?>
+    if($value){ ?>
         
     <div id="partie4" class="mainmetiertext equipe">
 
@@ -155,7 +181,7 @@ $query = new WP_Query( $args );
     </div>
         
   <?php  }
-    else if(isset($value[0])) { ?>   
+    else { ?>   
     
     <div id="partie4" class="mainmetiertext">
 

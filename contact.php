@@ -37,7 +37,7 @@
                     while ( $query->have_posts() ) : $query->the_post(); ?>
                     
                     <div class="heure">
-                    <h4 class="heure"><span class="picto picto-clock-black"></span>Heures de garde</h4>
+                    <h4 class="heure"><span class="picto picto-clock-black"></span>Horaires</h4>
                     <?php the_field('horaires'); ?>
                     </div>
                     <div class="adresse">

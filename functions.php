@@ -1,8 +1,10 @@
 <?php 
 function cs_front_scripts_enqueue() {
-    wp_enqueue_script('jquery');
-    wp_enqueue_style('screen', get_template_directory_uri() . '/ressources/css/screen.css');
-    wp_enqueue_script('korrigan', get_template_directory_uri() . '/ressources/js/korrigan.js', '', '', true);
+   wp_enqueue_script('jquery');
+  //  wp_enqueue_style('screen', get_template_directory_uri() . '/ressources/css/screen.css');
+   wp_enqueue_style('screen', get_template_directory_uri() . '/ressources/tags/1.0.1/css/screen.css');
+  //  wp_enqueue_script('korrigan', get_template_directory_uri() . '/ressources/js/korrigan.js', '', '', true);
+   wp_enqueue_script('korrigan', get_template_directory_uri() . '/ressources/tags/1.0.1/js/korrigan.min.js', '', '', true);
 }
 add_action('wp_enqueue_scripts', 'cs_front_scripts_enqueue');
 

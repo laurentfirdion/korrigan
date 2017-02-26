@@ -76,7 +76,7 @@ if ( is_user_logged_in() ) {
     <div class="navbar-header">
     
       <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-        Crêche des Korrigans
+        Crèche des Korrigans
      </a>
     </div>
 
