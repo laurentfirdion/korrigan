@@ -59,6 +59,8 @@ $query = new WP_Query( $args );
         <p><?php the_excerpt(); ?></p>
     </div>
 <?php endwhile; wp_reset_query();?>
+            <h3>DEMANDE D'INSCRIPTION</h3>
+            <h4><a href="/documents-utiles/">Documents nécessaires</a></h4>
         </div>
         
     </nav>

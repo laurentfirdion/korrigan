@@ -12,6 +12,24 @@
  */
 
 get_header(); ?>
+<div class="container-fluid" id="filariane">
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="ariane">
+                <ol class="breadcrumb">
+                    <li> <a href="<?php bloginfo('url'); ?>">ACCUEIL</a></li>
+                    <li>
+                        <?php if(get_the_title() == '') { echo 'Agenda';} else { the_title(); };?>
+                    </li>
+                </ol>
+            </div>
+            <br class="stopfloat" />
+        </div>
+    </div>
+    <div class="background">
+        <h1><?php if(get_the_title() == '') { echo 'Agenda';} else { the_title(); };?></h1>
+    </div>
+</div>
 <div class="container"> 
 	<div id="primary" class="content-area">
 		<div class="col-xs-12 col-sm-12 col-md-12">

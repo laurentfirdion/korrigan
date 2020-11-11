@@ -7,7 +7,7 @@
     <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <title><?php wp_title( '|', true, 'right' ); ?> Crêche des Korrigans, multi-accueil parental à Chevaigné 35250 </title>
     <link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
@@ -54,9 +54,11 @@ wp_nav_menu( $defaults );
 if ( is_user_logged_in() ) {
      $current_user = wp_get_current_user();
     echo '<span class="picto picto-user"></span><span class="name"> ' . $current_user->user_login . '</span>';
+    echo '<a href=" '. wp_logout_url() .'">Se déconnecter</a>';
 } 
 ?>
-              <a id="espace" class="espace-membre" href="<?php bloginfo('url'); ?>/espace-membre">Espace membre</a>
+              <a id="espace" class="espace-membre" href="https://permanences.creche-korrigans.fr" target="_blank">Permanences</a>
+			  <a id="espace" class="espace-membre" href="<?php bloginfo('url'); ?>/espace-membre">Espace membre</a>
               <a id="galerie" class="espace-membre" href="<?php bloginfo('url'); ?>/galerie">Galerie</a>
             </div>
      <br class="stopfloat"/>

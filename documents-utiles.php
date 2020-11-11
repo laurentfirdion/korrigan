@@ -1,5 +1,5 @@
 <?php
-//Template Name: membership
+//Template Name: documents
  
  get_header();
 	?>  
@@ -84,31 +84,6 @@ $query = new WP_Query( $args );
     
 <div class="col-xs-12 col-sm-9 col-md-9 mainmetier">
     
- <?php echo do_shortcode( '[CPABC_APPOINTMENT_CALENDAR calendar="1"]' ) ;?>   
-    
-    
-<h2>Planning repas</h2>    
-    
-  
-<?php  $query = new WP_Query(array(
-	'post_type'			=> 'repas',
-	'posts_per_page'	=> 5,
-	'order'				=> 'DESC'
-));
-            while ( $query->have_posts() ) : $query->the_post(); 
-    $pdf = get_field('repas-pdf'); 
-    ?>
-    
-        <div class="repas">
-           <a href="<?php echo $pdf ?>" target="_blank"> <span class="picto picto-menu"></span> <?php the_field('repas-date'); ?></a>
-        </div>
-    
-    
-      <?php endwhile; wp_reset_postdata(); ?> 
-    
-    
-    <br class="stopfloat" />    
-    
 <h2>Fichiers utiles</h2>
   
       <?php  $query = new WP_Query(array(
@@ -129,20 +104,6 @@ $query = new WP_Query( $args );
     
     
     <br class="stopfloat" />
-    
-    <div class="partage-photo">
-    <h2>Partager une photo</h2>
-    
-       <?php the_field('texte'); ?>
-        
-      <?php echo do_shortcode( '[wordpress_file_upload singlebutton="true" uploadpath="uploads/partage" uploadpatterns="*.jpg,*.jpeg,*.png,*.gif" maxsize="1" duplicatespolicy="maintain both" placements="selectbutton+uploadbutton+progressbar/message" uploadtitle="Votre fichier ?" widths="message:100%" heights="message:50" userdatalabel="Votre fichier ?|t:text|s:none|r:0|a:0|p:inline|d:"]' ); ?>
-    
-        
-   
-           <a class="button-galerie" href="<?php bloginfo('url'); ?>/galerie">Voir la galerie</a>
-       
-        
-    </div>
     
 
     

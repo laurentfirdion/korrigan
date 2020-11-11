@@ -1,5 +1,5 @@
 <?php
-//Template Name: membership
+//Template Name: gestion
  
  get_header();
 	?>  
@@ -84,73 +84,59 @@ $query = new WP_Query( $args );
     
 <div class="col-xs-12 col-sm-9 col-md-9 mainmetier">
     
- <?php echo do_shortcode( '[CPABC_APPOINTMENT_CALENDAR calendar="1"]' ) ;?>   
-    
-    
-<h2>Planning repas</h2>    
-    
-  
-<?php  $query = new WP_Query(array(
-	'post_type'			=> 'repas',
-	'posts_per_page'	=> 5,
-	'order'				=> 'DESC'
-));
-            while ( $query->have_posts() ) : $query->the_post(); 
-    $pdf = get_field('repas-pdf'); 
-    ?>
-    
-        <div class="repas">
-           <a href="<?php echo $pdf ?>" target="_blank"> <span class="picto picto-menu"></span> <?php the_field('repas-date'); ?></a>
-        </div>
-    
-    
-      <?php endwhile; wp_reset_postdata(); ?> 
-    
-    
-    <br class="stopfloat" />    
-    
-<h2>Fichiers utiles</h2>
-  
-      <?php  $query = new WP_Query(array(
-	'post_type'			=> 'fichier',
-	'posts_per_page'	=> -1,
-	'order'				=> 'ASC'
-));
-            while ( $query->have_posts() ) : $query->the_post(); 
-    $pdf = get_field('fichier'); 
-    ?>
-    
-        <div class="fichier">
-           <a class="button" href="<?php echo $pdf ?>" target="_blank"><?php the_field('nom'); ?></a>
-        </div>
-    
-    
-      <?php endwhile; wp_reset_postdata(); ?> 
-    
-    
-    <br class="stopfloat" />
-    
-    <div class="partage-photo">
-    <h2>Partager une photo</h2>
-    
-       <?php the_field('texte'); ?>
-        
-      <?php echo do_shortcode( '[wordpress_file_upload singlebutton="true" uploadpath="uploads/partage" uploadpatterns="*.jpg,*.jpeg,*.png,*.gif" maxsize="1" duplicatespolicy="maintain both" placements="selectbutton+uploadbutton+progressbar/message" uploadtitle="Votre fichier ?" widths="message:100%" heights="message:50" userdatalabel="Votre fichier ?|t:text|s:none|r:0|a:0|p:inline|d:"]' ); ?>
-    
-        
-   
-           <a class="button-galerie" href="<?php bloginfo('url'); ?>/galerie">Voir la galerie</a>
+    <h2>Photos partagées</h2>
+    <div class="grid"> 
        
-        
-    </div>
-    
+   <?php
+$uploads = wp_upload_dir();
 
+if ($dir = opendir($uploads['basedir'].'/partage')) {
+	$images = array();
+    $nb = 0;
+	while (false !== ($file = readdir($dir))) {
+		if ($file != "." && $file != ".." && preg_match('#\.(jpe?g|gif|png)$#i', $file) && $nb < 100) {
+			$images[] = $file; 
+            $nb++;
+		}
+	}
+	closedir($dir);
+}
+
+
+foreach($images as $image) {
+	echo '<div class="grid-item"><a class="fancybox" rel="group" href="';
+    echo $uploads['baseurl'].'/partage/'.$image;
+    echo '"width="100%"><img class="lazy" data-original="';
+    echo $uploads['baseurl'].'/partage/'.$image;
+    echo '" alt="" scale="0"/></a><a href="#" onclick="deleteFile(jQuery(this))">Supprimer le fichier</a></div>';
+}
+
+?>
     
+    </div>   
 </div>
 
 
 </div>
+<script>
+function deleteFile(elt) {
 
+    var $href = elt.parent().find('.fancybox').attr('href');
+    var $file = $href.replace('http://localhost:8888/wordpress-korrigans/wp-content/uploads/partage/', '').trim();
+    console.log($file);
+
+    $file = $file.trim();
+    jQuery.ajax({
+    method: "POST",
+    url: "<?php echo get_template_directory_uri()?>/deletefile.php",
+    data: { file : $file}
+   }).done(function( msg ) {
+    console.log( msg );
+}).fail(function( jqXHR, textStatus ) {
+  console.log( "Request failed: " + textStatus );
+    });
+}
+</script>
 
     <?php 
 get_footer(); ?>

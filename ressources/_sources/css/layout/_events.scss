@@ -1,0 +1,31 @@
+h2.tribe-events-page-title {
+    color: #e75d5d; 
+}
+#tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+    background-color: #e75d5d;
+}
+#tribe-events-content h3 a {
+    color: #e75d5d; 
+    
+    &:hover {
+        font-weight: bold;
+    }
+}
+#tribe-events-content .tribe-events-tooltip h4, #tribe_events_filters_wrapper .tribe_events_slider_val, .single-tribe_events a.tribe-events-gcal, .single-tribe_events a.tribe-events-ical, .tribe-events-list-event-title, #tribe-events-content a {
+    color: #e75d5d;
+    
+    &:hover {
+        font-weight: bold;
+    }
+}
+.tribe-events-back {
+    margin-top: 30px;
+    
+    a {
+        color: #e75d5d; 
+    
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}

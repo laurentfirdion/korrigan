@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     // PARAMETRES GRUNT
     var applications = ['korrigan'];
 
-    var app = grunt.option('app') || null; // Application
+    var app = grunt.option('app') || 'korrigan'; // Application
     var os = grunt.option('os') || null; // OS pour la lib Ruby
     var env = grunt.option('env') || 'dev'; // Environnement
     var tag = grunt.option('tag') || null; // Tag

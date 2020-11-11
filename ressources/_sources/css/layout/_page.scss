@@ -6,15 +6,29 @@
         margin-top: 30px;
     }
     
+    h4 {
+        margin-top: 25px;
+        margin-bottom: 16px;
+    }
+    
     ul {
         list-style-type: disc;
+    }
+    a {
+        color: #e75d5d;
+        
+        &:hover{
+            text-decoration: underline;
+        }
     }
 } 
 
 .aside {
     margin-top: 34px;
 }
-
+.affix {
+    position: relative;
+}
 
 #navbarside {
 
@@ -126,7 +140,7 @@
             }
         
 }
-.page-template-structure, .page-template-login, .page-template-actualites, .single-post, .search, .page-template-contact, .page-template-espace-membre, .page-template-galerie {
+.page-template-structure, .page-template-login, .page-template-actualites, .single-post, .search, .page-template-contact, .page-template-espace-membre, .page-template-documents-utiles, .page-template-galerie, .page-template-page-php {
     
     
     .background {
@@ -141,6 +155,12 @@
         font-size: 36px;
         text-align: center;
         padding: 35px 0;
+        
+        &.tribe-events-single-event-title {
+            color: #e75d5d;
+            font-size: 2.5em;
+            text-align: left;
+        }
     }
     h2 {
         font-size: 26px;
@@ -407,7 +427,7 @@
     }
 } 
 
-.page-template-contact, .page-template-espace-membre, .page-template-galerie {
+.page-template-contact, .page-template-espace-membre, .page-template-galerie, .page-template-documents-utiles {
     
     .aside {
         margin-top: 10px;
@@ -470,17 +490,34 @@
         }
     }
 }
-.page-template-espace-membre {
+.page-template-espace-membre, .page-template-documents-utiles {
     #espace {
         color: #e75d5d; 
     }
+    .repas {
+        a {
+            clear: both;
+            color: #e75d5d;
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 20px;
+            
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+    .picto-menu {
+        margin-right: 5px;
+    }
+    
 }
 .page-template-galerie {
     #galerie {
         color: #e75d5d; 
     }
 }
-.page-template-espace-membre,.page-template-galerie {
+.page-template-espace-membre,.page-template-galerie, .page-template-documents-utiles {
     .aside {
      h4 {
         color: #e75d5d; 
@@ -605,7 +642,7 @@
 
 @media screen and (max-width: 995px) {
     
-    .page-template-espace-membre {
+    .page-template-espace-membre, .page-template-documents-utiles {
         
         .mainmetier {
             

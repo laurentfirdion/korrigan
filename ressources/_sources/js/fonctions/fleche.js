@@ -31,13 +31,13 @@ $('#fleche a').on('click', function(evt){
           }
           
           if( $('.affix').length){
-          var offsetfooter = $("footer").offset().top;
-          var offfooter = offsetfooter - 0;
-          if(scroll > offfooter){
-          $('.affix').hide();
+          var offsetnav = $(".aside").offset().top;
+              
+          if(scroll > offsetnav){
+          $('.affix').css({'position':'fixed', 'top':'15px'});
           }
           else {                               
-         $('.affix').show();
+          $('.affix').css({'position':'relative', 'top':'auto'});
           }
               
           }

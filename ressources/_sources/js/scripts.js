@@ -7,12 +7,14 @@ if($('body').hasClass('page-template-structure-php')){
     
 $('body').scrollspy({ target: '#navbarside', offset:400 });
 
+
 $('#navbarside').affix({
   offset: {
-    top: -80
+    top: 0
   }
 });
 
+ 
 
 
  
