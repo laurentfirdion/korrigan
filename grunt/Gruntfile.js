@@ -3,21 +3,20 @@
 UTILISATION :
 
 - Watch
-    grunt watch -app=cadreo
-    grunt watch -app=blogmetier -local // watch de blogmetier en local (avec git)
-
+    grunt watch 
+ 
 - Compilation Compass :
-    grunt compass:prod -app=cadreo -force=true (pour prod)
-    grunt compass:dev -app=cadreo -force=true (pour dev)
+    grunt compass:prod -force=true (pour prod)
+    grunt compass:dev -force=true (pour dev)
 
 - Concaténation JS :
-    grunt concat -app=cadreo
+    grunt concat
 
 - Minification JS :
-    grunt minjs -app=cadreo
+    grunt minjs
 
 - Packaging :
-    grunt package -app=cadreo -tag=1.1.5 -force=true
+    grunt package -tag=1.1.5 -force=true
 
 
 */
@@ -237,10 +236,6 @@ module.exports = function(grunt) {
         grunt.registerTask('default', ['watch']);
 
         grunt.registerTask('minjs', ['concat', 'uglify']);
-
-        grunt.registerTask('recette', ['compass:prod', 'concat', 'copy:recette' ] ); // déploiement vers ressources.regionsjob.dom
-        grunt.registerTask('dev', ['compass:prod', 'concat', 'copy:dev' ] );         // déploiement vers dev.ressources.regionsjob.dom
-
 
         // Le numéro de tag doit être renseigné et correct
         if (tag !== null && /^[1-9](.)[0-9](.)[0-9]$/.test(tag)) {
